@@ -3,7 +3,13 @@ add_subdirectory(plugin)
 protobuf_generate_cpp(RPCZ_PB_SRCS RPCZ_PB_HDRS proto/rpcz.proto)
 set(PROTO_SOURCES ${RPCZ_PB_SRCS} ${RPCZ_PB_HDRS})
 
+find_package(ZeroMQ REQUIRED)
+
+include_directories(${ZeroMQ_INCLUDE_DIRS})
+include_directories("../../include/rpcz")
 include_directories(${PROJECT_BINARY_DIR})
+
+
 set(RPCZ_SOURCES
     application.cc clock.cc connection_manager.cc
     reactor.cc rpc.cc rpc_channel_impl.cc server.cc

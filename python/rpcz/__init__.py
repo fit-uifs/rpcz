@@ -1,5 +1,6 @@
 #!/usr/bin/env python
-
+#rpcz.
+#rpcz.
 import sys
-from rpcz.pywraprpcz import Application, Server
-from rpcz.rpc import RPC, RpcError, RpcApplicationError, RpcDeadlineExceeded
+from pywraprpcz import Application, Server
+from rpc import RPC, RpcError, RpcApplicationError, RpcDeadlineExceeded
