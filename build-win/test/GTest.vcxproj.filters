@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz-master\test\CMakeLists.txt" />
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz-master\build-win\CMakeFiles\caaae6486e1884f550547dece8c9533b\GTest-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz-master\build-win\CMakeFiles\caaae6486e1884f550547dece8c9533b\GTest-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz-master\build-win\CMakeFiles\caaae6486e1884f550547dece8c9533b\GTest-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz-master\build-win\CMakeFiles\caaae6486e1884f550547dece8c9533b\GTest-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz-master\build-win\CMakeFiles\caaae6486e1884f550547dece8c9533b\GTest-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz-master\build-win\CMakeFiles\caaae6486e1884f550547dece8c9533b\GTest-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz-master\build-win\CMakeFiles\caaae6486e1884f550547dece8c9533b\GTest-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz-master\build-win\CMakeFiles\9016478572f0b72613a60a5e7d0e8627\GTest-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz-master\build-win\CMakeFiles\ece2bfa65920540114a7ebc833cf7af9\GTest.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Y:\Documents\work-ubuntu\rpcz-master\build-win\test\CMakeFiles\GTest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{48F85F9B-8CBF-38A7-B4AC-536F93EFEB2C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

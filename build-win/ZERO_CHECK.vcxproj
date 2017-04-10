@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{213B317E-A61B-3E0B-B22B-40CA33229598}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ZERO_CHECK</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\ZeroMQ 4.0.4\include;Y:\Documents\work-ubuntu\dqlib_dev\external\protobuf-3.1.0\src;C:\boost_1_59_0;Y:\Documents\work-ubuntu\rpcz-master\include;Y:\Documents\work-ubuntu\rpcz-master\build-win\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\ZeroMQ 4.0.4\include;Y:\Documents\work-ubuntu\dqlib_dev\external\protobuf-3.1.0\src;C:\boost_1_59_0;Y:\Documents\work-ubuntu\rpcz-master\include;Y:\Documents\work-ubuntu\rpcz-master\build-win\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz-master\build-win\CMakeFiles\6bf54805853635920949b6f1a39aa2ff\generate.stamp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HY:/Documents/work-ubuntu/rpcz-master -BY:/Documents/work-ubuntu/rpcz-master/build-win --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz-master/build-win/CMakeFiles/6bf54805853635920949b6f1a39aa2ff/generate.stamp.rule;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\ExternalProject-download.cmake.in;C:\Program Files\CMake\share\cmake-3.6\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.6\Templates\CPackConfig.cmake.in;Y:\Documents\work-ubuntu\rpcz-master\CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz-master\build-win\CMakeFiles\3.6.2\CMakeCCompiler.cmake;Y:\Documents\work-ubuntu\rpcz-master\build-win\CMakeFiles\3.6.2\CMakeCXXCompiler.cmake;Y:\Documents\work-ubuntu\rpcz-master\build-win\CMakeFiles\3.6.2\CMakeRCCompiler.cmake;Y:\Documents\work-ubuntu\rpcz-master\build-win\CMakeFiles\3.6.2\CMakeSystem.cmake;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GLog-prefix\tmp\GLog-cfgcmd.txt.in;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\tmp\GTest-cfgcmd.txt.in;Y:\Documents\work-ubuntu\rpcz-master\cmake_modules\FindProtobufPlugin.cmake;Y:\Documents\work-ubuntu\rpcz-master\cmake_modules\FindZeroMQ.cmake;Y:\Documents\work-ubuntu\rpcz-master\cmake_modules\LibFindMacros.cmake;Y:\Documents\work-ubuntu\rpcz-master\cmake_modules\build_deps.cmake;Y:\Documents\work-ubuntu\rpcz-master\cmake_modules\library_suffix.cmake;Y:\Documents\work-ubuntu\rpcz-master\cmake_modules\rpcz_functions.cmake;Y:\Documents\work-ubuntu\rpcz-master\examples\cpp\CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz-master\src\CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz-master\src\rpcz\CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz-master\src\rpcz\plugin\CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz-master\src\rpcz\plugin\cpp\CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz-master\src\rpcz\plugin\python\CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz-master\test\CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz-master\test\proto\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz-master\build-win\CMakeFiles\generate.stamp;Y:\Documents\work-ubuntu\rpcz-master\build-win\src\CMakeFiles\generate.stamp;Y:\Documents\work-ubuntu\rpcz-master\build-win\src\rpcz\CMakeFiles\generate.stamp;Y:\Documents\work-ubuntu\rpcz-master\build-win\src\rpcz\plugin\CMakeFiles\generate.stamp;Y:\Documents\work-ubuntu\rpcz-master\build-win\src\rpcz\plugin\cpp\CMakeFiles\generate.stamp;Y:\Documents\work-ubuntu\rpcz-master\build-win\src\rpcz\plugin\python\CMakeFiles\generate.stamp;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\CMakeFiles\generate.stamp;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\proto\CMakeFiles\generate.stamp;Y:\Documents\work-ubuntu\rpcz-master\build-win\examples\cpp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HY:/Documents/work-ubuntu/rpcz-master -BY:/Documents/work-ubuntu/rpcz-master/build-win --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz-master/build-win/CMakeFiles/6bf54805853635920949b6f1a39aa2ff/generate.stamp.rule;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\ExternalProject-download.cmake.in;C:\Program Files\CMake\share\cmake-3.6\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.6\Templates\CPackConfig.cmake.in;Y:\Documents\work-ubuntu\rpcz-master\CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz-master\build-win\CMakeFiles\3.6.2\CMakeCCompiler.cmake;Y:\Documents\work-ubuntu\rpcz-master\build-win\CMakeFiles\3.6.2\CMakeCXXCompiler.cmake;Y:\Documents\work-ubuntu\rpcz-master\build-win\CMakeFiles\3.6.2\CMakeRCCompiler.cmake;Y:\Documents\work-ubuntu\rpcz-master\build-win\CMakeFiles\3.6.2\CMakeSystem.cmake;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GLog-prefix\tmp\GLog-cfgcmd.txt.in;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\tmp\GTest-cfgcmd.txt.in;Y:\Documents\work-ubuntu\rpcz-master\cmake_modules\FindProtobufPlugin.cmake;Y:\Documents\work-ubuntu\rpcz-master\cmake_modules\FindZeroMQ.cmake;Y:\Documents\work-ubuntu\rpcz-master\cmake_modules\LibFindMacros.cmake;Y:\Documents\work-ubuntu\rpcz-master\cmake_modules\build_deps.cmake;Y:\Documents\work-ubuntu\rpcz-master\cmake_modules\library_suffix.cmake;Y:\Documents\work-ubuntu\rpcz-master\cmake_modules\rpcz_functions.cmake;Y:\Documents\work-ubuntu\rpcz-master\examples\cpp\CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz-master\src\CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz-master\src\rpcz\CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz-master\src\rpcz\plugin\CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz-master\src\rpcz\plugin\cpp\CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz-master\src\rpcz\plugin\python\CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz-master\test\CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz-master\test\proto\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz-master\build-win\CMakeFiles\generate.stamp;Y:\Documents\work-ubuntu\rpcz-master\build-win\src\CMakeFiles\generate.stamp;Y:\Documents\work-ubuntu\rpcz-master\build-win\src\rpcz\CMakeFiles\generate.stamp;Y:\Documents\work-ubuntu\rpcz-master\build-win\src\rpcz\plugin\CMakeFiles\generate.stamp;Y:\Documents\work-ubuntu\rpcz-master\build-win\src\rpcz\plugin\cpp\CMakeFiles\generate.stamp;Y:\Documents\work-ubuntu\rpcz-master\build-win\src\rpcz\plugin\python\CMakeFiles\generate.stamp;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\CMakeFiles\generate.stamp;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\proto\CMakeFiles\generate.stamp;Y:\Documents\work-ubuntu\rpcz-master\build-win\examples\cpp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

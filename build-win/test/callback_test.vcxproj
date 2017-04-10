@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{CE2C5DED-1695-30B7-886B-AB839052769F}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>callback_test</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz-master\build-win\test\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">callback_test.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">callback_test</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz-master\build-win\test\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">callback_test.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">callback_test</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\ZeroMQ 4.0.4\include;Y:\Documents\work-ubuntu\dqlib_dev\external\protobuf-3.1.0\src;C:\boost_1_59_0;Y:\Documents\work-ubuntu\rpcz-master\include;Y:\Documents\work-ubuntu\rpcz-master\build-win\src;Y:\Documents\work-ubuntu\rpcz-master\build-win\test;Y:\Documents\work-ubuntu\rpcz-master\src;Y:\Documents\work-ubuntu\rpcz-master\build-win\deps\include;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;BOOST_ALL_NO_LIB;BOOST_ALL_DYN_LINK;BOOST_LIB_DIAGNOSTIC;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;BOOST_ALL_NO_LIB;BOOST_ALL_DYN_LINK;BOOST_LIB_DIAGNOSTIC;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\ZeroMQ 4.0.4\include;Y:\Documents\work-ubuntu\dqlib_dev\external\protobuf-3.1.0\src;C:\boost_1_59_0;Y:\Documents\work-ubuntu\rpcz-master\include;Y:\Documents\work-ubuntu\rpcz-master\build-win\src;Y:\Documents\work-ubuntu\rpcz-master\build-win\test;Y:\Documents\work-ubuntu\rpcz-master\src;Y:\Documents\work-ubuntu\rpcz-master\build-win\deps\include;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\ZeroMQ 4.0.4\include;Y:\Documents\work-ubuntu\dqlib_dev\external\protobuf-3.1.0\src;C:\boost_1_59_0;Y:\Documents\work-ubuntu\rpcz-master\include;Y:\Documents\work-ubuntu\rpcz-master\build-win\src;Y:\Documents\work-ubuntu\rpcz-master\build-win\test;Y:\Documents\work-ubuntu\rpcz-master\src;Y:\Documents\work-ubuntu\rpcz-master\build-win\deps\include;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\src\rpcz\Debug\rpcz_d.lib;Debug\rpcz_gtest_main_d.lib;gtest.lib;..\deps\lib\libglog.lib;pthread.lib;Y:\Documents\work-ubuntu\dqlib_dev\external\protobuf-3.1.0\libs\x64\release\libprotobuf.lib;C:\boost_1_59_0\lib64-msvc-14.0\boost_thread-vc140-mt-gd-1_59.lib;C:\boost_1_59_0\lib64-msvc-14.0\boost_program_options-vc140-mt-gd-1_59.lib;C:\boost_1_59_0\lib64-msvc-14.0\boost_system-vc140-mt-gd-1_59.lib;C:\boost_1_59_0\lib64-msvc-14.0\boost_date_time-vc140-mt-gd-1_59.lib;C:\boost_1_59_0\lib64-msvc-14.0\boost_chrono-vc140-mt-gd-1_59.lib;C:\boost_1_59_0\lib64-msvc-14.0\boost_atomic-vc140-mt-gd-1_59.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest-build;Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest-build/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>Y:/Documents/work-ubuntu/rpcz-master/build-win/test/Debug/callback_test.lib</ImportLibrary>
+      <ProgramDataBaseFile>Y:/Documents/work-ubuntu/rpcz-master/build-win/test/Debug/callback_test.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\ZeroMQ 4.0.4\include;Y:\Documents\work-ubuntu\dqlib_dev\external\protobuf-3.1.0\src;C:\boost_1_59_0;Y:\Documents\work-ubuntu\rpcz-master\include;Y:\Documents\work-ubuntu\rpcz-master\build-win\src;Y:\Documents\work-ubuntu\rpcz-master\build-win\test;Y:\Documents\work-ubuntu\rpcz-master\src;Y:\Documents\work-ubuntu\rpcz-master\build-win\deps\include;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_ALL_NO_LIB;BOOST_ALL_DYN_LINK;BOOST_LIB_DIAGNOSTIC;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_ALL_NO_LIB;BOOST_ALL_DYN_LINK;BOOST_LIB_DIAGNOSTIC;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\ZeroMQ 4.0.4\include;Y:\Documents\work-ubuntu\dqlib_dev\external\protobuf-3.1.0\src;C:\boost_1_59_0;Y:\Documents\work-ubuntu\rpcz-master\include;Y:\Documents\work-ubuntu\rpcz-master\build-win\src;Y:\Documents\work-ubuntu\rpcz-master\build-win\test;Y:\Documents\work-ubuntu\rpcz-master\src;Y:\Documents\work-ubuntu\rpcz-master\build-win\deps\include;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\ZeroMQ 4.0.4\include;Y:\Documents\work-ubuntu\dqlib_dev\external\protobuf-3.1.0\src;C:\boost_1_59_0;Y:\Documents\work-ubuntu\rpcz-master\include;Y:\Documents\work-ubuntu\rpcz-master\build-win\src;Y:\Documents\work-ubuntu\rpcz-master\build-win\test;Y:\Documents\work-ubuntu\rpcz-master\src;Y:\Documents\work-ubuntu\rpcz-master\build-win\deps\include;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\src\rpcz\Release\rpcz.lib;Release\rpcz_gtest_main.lib;gtest.lib;..\deps\lib\libglog.lib;pthread.lib;Y:\Documents\work-ubuntu\dqlib_dev\external\protobuf-3.1.0\libs\x64\release\libprotobuf.lib;C:\boost_1_59_0\lib64-msvc-14.0\boost_thread-vc140-mt-1_59.lib;C:\boost_1_59_0\lib64-msvc-14.0\boost_program_options-vc140-mt-1_59.lib;C:\boost_1_59_0\lib64-msvc-14.0\boost_system-vc140-mt-1_59.lib;C:\boost_1_59_0\lib64-msvc-14.0\boost_date_time-vc140-mt-1_59.lib;C:\boost_1_59_0\lib64-msvc-14.0\boost_chrono-vc140-mt-1_59.lib;C:\boost_1_59_0\lib64-msvc-14.0\boost_atomic-vc140-mt-1_59.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest-build;Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest-build/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>Y:/Documents/work-ubuntu/rpcz-master/build-win/test/Release/callback_test.lib</ImportLibrary>
+      <ProgramDataBaseFile>Y:/Documents/work-ubuntu/rpcz-master/build-win/test/Release/callback_test.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz-master\test\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule Y:/Documents/work-ubuntu/rpcz-master/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HY:/Documents/work-ubuntu/rpcz-master -BY:/Documents/work-ubuntu/rpcz-master/build-win --check-stamp-file Y:\Documents\work-ubuntu\rpcz-master\build-win\test\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz-master/test/CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz-master\test\CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz-master\cmake_modules\build_deps.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;Y:\Documents\work-ubuntu\rpcz-master\cmake_modules\library_suffix.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.6\Modules\ExternalProject-download.cmake.in;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GLog-prefix\tmp\GLog-cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.6\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.6\Modules\ExternalProject-download.cmake.in;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\tmp\GTest-cfgcmd.txt.in;Y:\Documents\work-ubuntu\rpcz-master\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz-master\build-win\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule Y:/Documents/work-ubuntu/rpcz-master/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HY:/Documents/work-ubuntu/rpcz-master -BY:/Documents/work-ubuntu/rpcz-master/build-win --check-stamp-file Y:\Documents\work-ubuntu\rpcz-master\build-win\test\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz-master/test/CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz-master\test\CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz-master\cmake_modules\build_deps.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;Y:\Documents\work-ubuntu\rpcz-master\cmake_modules\library_suffix.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.6\Modules\ExternalProject-download.cmake.in;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GLog-prefix\tmp\GLog-cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.6\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.6\Modules\ExternalProject-download.cmake.in;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\tmp\GTest-cfgcmd.txt.in;Y:\Documents\work-ubuntu\rpcz-master\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz-master\build-win\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Y:\Documents\work-ubuntu\rpcz-master\test\callback_test.cc"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Y:/Documents/work-ubuntu/rpcz-master/build-win/ZERO_CHECK.vcxproj">
+      <Project>213B317E-A61B-3E0B-B22B-40CA33229598</Project>
+    </ProjectReference>
+    <ProjectReference Include="Y:/Documents/work-ubuntu/rpcz-master/build-win/src/rpcz/rpcz.vcxproj">
+      <Project>1C16D441-978E-3E39-923D-E084CACAD356</Project>
+    </ProjectReference>
+    <ProjectReference Include="Y:/Documents/work-ubuntu/rpcz-master/build-win/test/rpcz_gtest_main.vcxproj">
+      <Project>88E55D1A-F907-364A-8B1E-77A9B868FCC9</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

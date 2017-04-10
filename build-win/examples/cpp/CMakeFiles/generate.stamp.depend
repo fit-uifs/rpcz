@@ -1,0 +1,8 @@
+# CMake generation dependency list for this directory.
+Y:/Documents/work-ubuntu/rpcz-master/examples/cpp/CMakeLists.txt
+Y:/Documents/work-ubuntu/rpcz-master/cmake_modules/rpcz_functions.cmake
+Y:/Documents/work-ubuntu/rpcz-master/cmake_modules/FindProtobufPlugin.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CMakeParseArguments.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CMakeParseArguments.cmake
