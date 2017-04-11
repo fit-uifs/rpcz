@@ -262,7 +262,7 @@ int iniFileLoad(const char *filename)
 
 	fseek(file, 0, SEEK_END);
 	len = ftell(file);
-	gBuffer = malloc(len);
+	gBuffer = (char*)malloc(len);
 	if (gBuffer == NULL) {
 		fclose(file);
 		return 0;

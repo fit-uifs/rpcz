@@ -16,10 +16,10 @@
 
 #include <iostream>
 
-#ifdef _WIN32 || WIN32
-#define GLOG_NO_ABBREVIATED_SEVERITIES
-//#include <windows.h>
-#endif
+//#ifdef _WIN32 || WIN32
+//#define GLOG_NO_ABBREVIATED_SEVERITIES
+////#include <windows.h>
+//#endif
 
 #include "rpcz/rpcz.hpp"
 #include "cpp/search.pb.h"
@@ -37,7 +37,7 @@
 #include <iostream>
 #include <boost/thread/thread.hpp>
 
-#include <glog/logging.h>
+//#include <glog/logging.h>
 #include "rpcz/callback.hpp"
 #include "rpcz/connection_manager.hpp"
 #include "rpcz/rpc_channel.hpp"

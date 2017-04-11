@@ -22,8 +22,10 @@
 #ifndef _INI_RW_H_
 #define _INI_RW_H_
 
+#ifndef _WIN32 || WIN32
 #ifdef __cplusplus
 extern "C" {
+#endif
 #endif
 
 //加载ini文件至内存
@@ -43,8 +45,10 @@ int iniSetString(const char *section, const char *key, const char *value);
 //设置整数值：base取值10、16、8，分别表示10、16、8进制，缺省为10进制
 int iniSetInt(const char *section, const char *key, int value, int base);
 
+#ifndef _WIN32 || WIN32
 #ifdef __cplusplus
 }
+#endif
 #endif
 
 #endif

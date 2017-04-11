@@ -64,10 +64,10 @@
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>ZMQ_STATIC;WIN32;_WINDOWS;_DEBUG;BOOST_LOG_DYN_LINK;Boost_USE_STATIC_LIBS=ON;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>GLOG_NO_ABBREVIATED_SEVERITIES;ZMQ_STATIC;WIN32;_WINDOWS;_DEBUG;BOOST_LOG_DYN_LINK;Boost_USE_STATIC_LIBS=ON;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
@@ -84,7 +84,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>iphlpapi.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\src\rpcz\Debug\rpcz_d.lib;Debug\example_pb_d.lib;Y:\Documents\work-ubuntu\libzmq\bin\win32\Debug\v140\static\libzmq.lib;C:\boost_1_59_0_32\lib32-msvc-14.0\libboost_thread-vc140-mt-sgd-1_59.lib;C:\boost_1_59_0_32\lib32-msvc-14.0\libboost_program_options-vc140-mt-sgd-1_59.lib;C:\boost_1_59_0_32\lib32-msvc-14.0\libboost_system-vc140-mt-sgd-1_59.lib;C:\boost_1_59_0_32\lib32-msvc-14.0\libboost_date_time-vc140-mt-sgd-1_59.lib;C:\boost_1_59_0_32\lib32-msvc-14.0\libboost_chrono-vc140-mt-sgd-1_59.lib;C:\boost_1_59_0_32\lib32-msvc-14.0\libboost_atomic-vc140-mt-sgd-1_59.lib;Y:\Documents\work-ubuntu\dqlib_dev\external\protobuf-3.1.0\libs\win32\debug\libprotobuf.lib</AdditionalDependencies>
+      <AdditionalDependencies>iphlpapi.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\src\rpcz\Debug\rpcz_d.lib;Debug\example_pb_d.lib;Y:\Documents\work-ubuntu\libzmq\bin\win32\Debug\v140\static\libzmq.lib;C:\boost_1_59_0_32\lib32-msvc-14.0\libboost_thread-vc140-mt-gd-1_59.lib;C:\boost_1_59_0_32\lib32-msvc-14.0\libboost_program_options-vc140-mt-gd-1_59.lib;C:\boost_1_59_0_32\lib32-msvc-14.0\libboost_system-vc140-mt-gd-1_59.lib;C:\boost_1_59_0_32\lib32-msvc-14.0\libboost_date_time-vc140-mt-gd-1_59.lib;C:\boost_1_59_0_32\lib32-msvc-14.0\libboost_chrono-vc140-mt-gd-1_59.lib;C:\boost_1_59_0_32\lib32-msvc-14.0\libboost_atomic-vc140-mt-gd-1_59.lib;Y:\Documents\work-ubuntu\dqlib_dev-new\external\protobuf-3.1.0\libs\win32\debug\libprotobuf.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>Debug</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -176,6 +176,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\examples\cpp\inirw.c" />
     <ClCompile Include="Y:\Documents\work-ubuntu\rpcz\examples\cpp\example_client.cc" />
   </ItemGroup>
   <ItemGroup>
@@ -188,6 +189,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="Y:/Documents/work-ubuntu/rpcz/build-win/src/rpcz/rpcz.vcxproj">
       <Project>820D3B17-71B1-358D-8450-7EDE6F8CD019</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\examples\cpp\inirw.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
