@@ -1,4 +1,4 @@
-# Install script for directory: Y:/Documents/work-ubuntu/rpcz-master/src/rpcz
+# Install script for directory: Y:/Documents/work-ubuntu/rpcz/src/rpcz
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,27 +29,23 @@ endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "Y:/Documents/work-ubuntu/rpcz-master/build-win/src/rpcz/Debug/rpcz_d.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "Y:/Documents/work-ubuntu/rpcz/build-win/src/rpcz/Debug/rpcz_d.lib")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "Y:/Documents/work-ubuntu/rpcz-master/build-win/src/rpcz/Release/rpcz.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "Y:/Documents/work-ubuntu/rpcz/build-win/src/rpcz/Release/rpcz.lib")
   endif()
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "Y:/Documents/work-ubuntu/rpcz-master/build-win/src/rpcz/Debug/zsendrpc.exe")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "Y:/Documents/work-ubuntu/rpcz/build-win/src/rpcz/Debug/zsendrpc.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "Y:/Documents/work-ubuntu/rpcz-master/build-win/src/rpcz/Release/zsendrpc.exe")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "Y:/Documents/work-ubuntu/rpcz/build-win/src/rpcz/Release/zsendrpc.exe")
   endif()
-endif()
-
-if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/rpcz" TYPE FILE FILES "Y:/Documents/work-ubuntu/rpcz-master/build-win/src/rpcz/rpcz.pb.h")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("Y:/Documents/work-ubuntu/rpcz-master/build-win/src/rpcz/plugin/cmake_install.cmake")
+  include("Y:/Documents/work-ubuntu/rpcz/build-win/src/rpcz/plugin/cmake_install.cmake")
 
 endif()
 

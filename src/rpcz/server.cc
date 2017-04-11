@@ -20,7 +20,7 @@
 #include <functional>
 #include <iostream>
 #include <utility>
-#ifndef WIN32
+#ifndef _WIN32
 #include <sys/errno.h>
 #include <sys/signal.h>
 #endif

@@ -1,4 +1,4 @@
-# Install script for directory: Y:/Documents/work-ubuntu/rpcz-master/test/proto
+# Install script for directory: Y:/Documents/work-ubuntu/rpcz/test/proto
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

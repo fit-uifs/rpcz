@@ -65,7 +65,6 @@ endif()
 set(CMAKE_OSX_ARCHITECTURES x86_64)
 
 add_subdirectory(test)
-
 add_subdirectory(src)
 
 if(rpcz_build_tests)

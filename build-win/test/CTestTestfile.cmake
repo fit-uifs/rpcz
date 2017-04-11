@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: Y:/Documents/work-ubuntu/rpcz-master/test
-# Build directory: Y:/Documents/work-ubuntu/rpcz-master/build-win/test
+# Source directory: Y:/Documents/work-ubuntu/rpcz/test
+# Build directory: Y:/Documents/work-ubuntu/rpcz/build-win/test
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

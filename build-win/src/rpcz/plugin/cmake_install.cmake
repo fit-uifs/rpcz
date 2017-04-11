@@ -1,4 +1,4 @@
-# Install script for directory: Y:/Documents/work-ubuntu/rpcz-master/src/rpcz/plugin
+# Install script for directory: Y:/Documents/work-ubuntu/rpcz/src/rpcz/plugin
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,8 +29,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("Y:/Documents/work-ubuntu/rpcz-master/build-win/src/rpcz/plugin/cpp/cmake_install.cmake")
-  include("Y:/Documents/work-ubuntu/rpcz-master/build-win/src/rpcz/plugin/python/cmake_install.cmake")
+  include("Y:/Documents/work-ubuntu/rpcz/build-win/src/rpcz/plugin/cpp/cmake_install.cmake")
+  include("Y:/Documents/work-ubuntu/rpcz/build-win/src/rpcz/plugin/python/cmake_install.cmake")
 
 endif()
 

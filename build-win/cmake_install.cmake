@@ -1,4 +1,4 @@
-# Install script for directory: Y:/Documents/work-ubuntu/rpcz-master
+# Install script for directory: Y:/Documents/work-ubuntu/rpcz
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,29 +29,30 @@ endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/rpcz" TYPE FILE FILES
-    "Y:/Documents/work-ubuntu/rpcz-master/include/rpcz/application.hpp"
-    "Y:/Documents/work-ubuntu/rpcz-master/include/rpcz/callback.hpp"
-    "Y:/Documents/work-ubuntu/rpcz-master/include/rpcz/connection_manager.hpp"
-    "Y:/Documents/work-ubuntu/rpcz-master/include/rpcz/macros.hpp"
-    "Y:/Documents/work-ubuntu/rpcz-master/include/rpcz/rpc.hpp"
-    "Y:/Documents/work-ubuntu/rpcz-master/include/rpcz/rpc_channel.hpp"
-    "Y:/Documents/work-ubuntu/rpcz-master/include/rpcz/rpcz.hpp"
-    "Y:/Documents/work-ubuntu/rpcz-master/include/rpcz/server.hpp"
-    "Y:/Documents/work-ubuntu/rpcz-master/include/rpcz/service.hpp"
-    "Y:/Documents/work-ubuntu/rpcz-master/include/rpcz/sync_event.hpp"
-    "Y:/Documents/work-ubuntu/rpcz-master/include/rpcz/zmq_utils.hpp"
+    "Y:/Documents/work-ubuntu/rpcz/include/rpcz/application.hpp"
+    "Y:/Documents/work-ubuntu/rpcz/include/rpcz/callback.hpp"
+    "Y:/Documents/work-ubuntu/rpcz/include/rpcz/connection_manager.hpp"
+    "Y:/Documents/work-ubuntu/rpcz/include/rpcz/macros.hpp"
+    "Y:/Documents/work-ubuntu/rpcz/include/rpcz/rpc.hpp"
+    "Y:/Documents/work-ubuntu/rpcz/include/rpcz/rpc_channel.hpp"
+    "Y:/Documents/work-ubuntu/rpcz/include/rpcz/rpcz.hpp"
+    "Y:/Documents/work-ubuntu/rpcz/include/rpcz/server.hpp"
+    "Y:/Documents/work-ubuntu/rpcz/include/rpcz/service.hpp"
+    "Y:/Documents/work-ubuntu/rpcz/include/rpcz/sync_event.hpp"
+    "Y:/Documents/work-ubuntu/rpcz/include/rpcz/zmq.hpp"
+    "Y:/Documents/work-ubuntu/rpcz/include/rpcz/zmq_utils.hpp"
     )
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/rpcz" TYPE FILE FILES "Y:/Documents/work-ubuntu/rpcz-master/build-win/src/rpcz/rpcz.pb.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/rpcz" TYPE FILE FILES "Y:/Documents/work-ubuntu/rpcz/build-win/src/rpcz/rpcz.pb.h")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("Y:/Documents/work-ubuntu/rpcz-master/build-win/src/cmake_install.cmake")
-  include("Y:/Documents/work-ubuntu/rpcz-master/build-win/test/cmake_install.cmake")
-  include("Y:/Documents/work-ubuntu/rpcz-master/build-win/examples/cpp/cmake_install.cmake")
+  include("Y:/Documents/work-ubuntu/rpcz/build-win/src/cmake_install.cmake")
+  include("Y:/Documents/work-ubuntu/rpcz/build-win/test/cmake_install.cmake")
+  include("Y:/Documents/work-ubuntu/rpcz/build-win/examples/cpp/cmake_install.cmake")
 
 endif()
 
@@ -63,5 +64,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "Y:/Documents/work-ubuntu/rpcz-master/build-win/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "Y:/Documents/work-ubuntu/rpcz/build-win/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

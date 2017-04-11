@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGUID>{E41544D1-4ACC-325C-A6B9-51F8E8E8F43D}</ProjectGUID>
+    <ProjectGUID>{4D83F2D5-7CD2-3748-85B3-0C53FCB558EE}</ProjectGUID>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
     <ProjectName>GTest</ProjectName>
@@ -43,7 +43,7 @@
     </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Program Files\ZeroMQ 4.0.4\include;Y:\Documents\work-ubuntu\dqlib_dev\external\protobuf-3.1.0\src;C:\boost_1_59_0;Y:\Documents\work-ubuntu\rpcz-master\include;Y:\Documents\work-ubuntu\rpcz-master\build-win\src;Y:\Documents\work-ubuntu\rpcz-master\build-win\test;Y:\Documents\work-ubuntu\rpcz-master\src;Y:\Documents\work-ubuntu\rpcz-master\build-win\deps\include;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Y:\Documents\work-ubuntu\dqlib_dev\external\protobuf-3.1.0\include;Y:\Documents\work-ubuntu\rpcz\src\rpcz;Y:\Documents\work-ubuntu\rpcz\include\rpcz;Y:\Documents\work-ubuntu\libzmq\include;C:\boost_1_59_0;Y:\Documents\work-ubuntu\rpcz\include;Y:\Documents\work-ubuntu\rpcz\build-win\src;Y:\Documents\work-ubuntu\rpcz\build-win\test;Y:\Documents\work-ubuntu\rpcz\src;Y:\Documents\work-ubuntu\rpcz\build-win\deps\include;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -53,7 +53,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Program Files\ZeroMQ 4.0.4\include;Y:\Documents\work-ubuntu\dqlib_dev\external\protobuf-3.1.0\src;C:\boost_1_59_0;Y:\Documents\work-ubuntu\rpcz-master\include;Y:\Documents\work-ubuntu\rpcz-master\build-win\src;Y:\Documents\work-ubuntu\rpcz-master\build-win\test;Y:\Documents\work-ubuntu\rpcz-master\src;Y:\Documents\work-ubuntu\rpcz-master\build-win\deps\include;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Y:\Documents\work-ubuntu\dqlib_dev\external\protobuf-3.1.0\include;Y:\Documents\work-ubuntu\rpcz\src\rpcz;Y:\Documents\work-ubuntu\rpcz\include\rpcz;Y:\Documents\work-ubuntu\libzmq\include;C:\boost_1_59_0;Y:\Documents\work-ubuntu\rpcz\include;Y:\Documents\work-ubuntu\rpcz\build-win\src;Y:\Documents\work-ubuntu\rpcz\build-win\test;Y:\Documents\work-ubuntu\rpcz\src;Y:\Documents\work-ubuntu\rpcz\build-win\deps\include;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -62,10 +62,10 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz-master\test\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule Y:/Documents/work-ubuntu/rpcz-master/test/CMakeLists.txt</Message>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\test\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule Y:/Documents/work-ubuntu/rpcz/test/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HY:/Documents/work-ubuntu/rpcz-master -BY:/Documents/work-ubuntu/rpcz-master/build-win --check-stamp-file Y:\Documents\work-ubuntu\rpcz-master\build-win\test\CMakeFiles\generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HY:/Documents/work-ubuntu/rpcz -BY:/Documents/work-ubuntu/rpcz/build-win --check-stamp-file Y:\Documents\work-ubuntu\rpcz\build-win\test\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -73,12 +73,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz-master/test/CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz-master\test\CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz-master\cmake_modules\build_deps.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;Y:\Documents\work-ubuntu\rpcz-master\cmake_modules\library_suffix.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.6\Modules\ExternalProject-download.cmake.in;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GLog-prefix\tmp\GLog-cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.6\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.6\Modules\ExternalProject-download.cmake.in;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\tmp\GTest-cfgcmd.txt.in;Y:\Documents\work-ubuntu\rpcz-master\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz-master\build-win\test\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz/test/CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz\test\CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz\cmake_modules\build_deps.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;Y:\Documents\work-ubuntu\rpcz\cmake_modules\library_suffix.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.6\Modules\ExternalProject-download.cmake.in;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\tmp\GLog-cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.6\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.6\Modules\ExternalProject-download.cmake.in;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\tmp\GTest-cfgcmd.txt.in;Y:\Documents\work-ubuntu\rpcz\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule Y:/Documents/work-ubuntu/rpcz-master/test/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule Y:/Documents/work-ubuntu/rpcz/test/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HY:/Documents/work-ubuntu/rpcz-master -BY:/Documents/work-ubuntu/rpcz-master/build-win --check-stamp-file Y:\Documents\work-ubuntu\rpcz-master\build-win\test\CMakeFiles\generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HY:/Documents/work-ubuntu/rpcz -BY:/Documents/work-ubuntu/rpcz/build-win --check-stamp-file Y:\Documents\work-ubuntu\rpcz\build-win\test\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -86,28 +86,28 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz-master/test/CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz-master\test\CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz-master\cmake_modules\build_deps.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;Y:\Documents\work-ubuntu\rpcz-master\cmake_modules\library_suffix.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.6\Modules\ExternalProject-download.cmake.in;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GLog-prefix\tmp\GLog-cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.6\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.6\Modules\ExternalProject-download.cmake.in;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\tmp\GTest-cfgcmd.txt.in;Y:\Documents\work-ubuntu\rpcz-master\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz-master\build-win\test\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz/test/CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz\test\CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz\cmake_modules\build_deps.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;Y:\Documents\work-ubuntu\rpcz\cmake_modules\library_suffix.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.6\Modules\ExternalProject-download.cmake.in;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\tmp\GLog-cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.6\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.6\Modules\ExternalProject-download.cmake.in;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\tmp\GTest-cfgcmd.txt.in;Y:\Documents\work-ubuntu\rpcz\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz-master\build-win\CMakeFiles\caaae6486e1884f550547dece8c9533b\GTest-mkdir.rule">
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\ff4d7ddfe55bd64a371fdd714836b146\GTest-mkdir.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Creating directories for 'GTest'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src/GTest
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest-build
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src/GTest-build
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/tmp
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/tmp
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-mkdir
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-mkdir
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -115,24 +115,24 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz-master/build-win/CMakeFiles/caaae6486e1884f550547dece8c9533b/GTest-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-mkdir</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/ff4d7ddfe55bd64a371fdd714836b146/GTest-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-mkdir</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Creating directories for 'GTest'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src/GTest
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest-build
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src/GTest-build
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/tmp
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/tmp
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-mkdir
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-mkdir
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -140,26 +140,26 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz-master/build-win/CMakeFiles/caaae6486e1884f550547dece8c9533b/GTest-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-mkdir</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/ff4d7ddfe55bd64a371fdd714836b146/GTest-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-mkdir</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz-master\build-win\CMakeFiles\caaae6486e1884f550547dece8c9533b\GTest-download.rule">
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\ff4d7ddfe55bd64a371fdd714836b146\GTest-download.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing download step (download, verify and extract) for 'GTest'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-cd Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src
+cd Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src
 if %errorlevel% neq 0 goto :cmEnd
 Y:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -P Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest-stamp/download-GTest.cmake
+"C:\Program Files\CMake\bin\cmake.exe" -P Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src/GTest-stamp/download-GTest.cmake
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -P Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest-stamp/verify-GTest.cmake
+"C:\Program Files\CMake\bin\cmake.exe" -P Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src/GTest-stamp/verify-GTest.cmake
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -P Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest-stamp/extract-GTest.cmake
+"C:\Program Files\CMake\bin\cmake.exe" -P Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src/GTest-stamp/extract-GTest.cmake
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-download
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-download
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -167,22 +167,22 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz-master/build-win/CMakeFiles/caaae6486e1884f550547dece8c9533b/GTest-download.rule;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\GTest-urlinfo.txt;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-mkdir;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-download</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/ff4d7ddfe55bd64a371fdd714836b146/GTest-download.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\GTest-urlinfo.txt;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-download</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing download step (download, verify and extract) for 'GTest'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-cd Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src
+cd Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src
 if %errorlevel% neq 0 goto :cmEnd
 Y:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -P Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest-stamp/download-GTest.cmake
+"C:\Program Files\CMake\bin\cmake.exe" -P Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src/GTest-stamp/download-GTest.cmake
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -P Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest-stamp/verify-GTest.cmake
+"C:\Program Files\CMake\bin\cmake.exe" -P Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src/GTest-stamp/verify-GTest.cmake
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -P Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest-stamp/extract-GTest.cmake
+"C:\Program Files\CMake\bin\cmake.exe" -P Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src/GTest-stamp/extract-GTest.cmake
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-download
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-download
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -190,18 +190,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz-master/build-win/CMakeFiles/caaae6486e1884f550547dece8c9533b/GTest-download.rule;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\GTest-urlinfo.txt;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-mkdir;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-download</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/ff4d7ddfe55bd64a371fdd714836b146/GTest-download.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\GTest-urlinfo.txt;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-download</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz-master\build-win\CMakeFiles\caaae6486e1884f550547dece8c9533b\GTest-update.rule">
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\ff4d7ddfe55bd64a371fdd714836b146\GTest-update.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No update step for 'GTest'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-update
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-update
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -209,14 +209,14 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz-master/build-win/CMakeFiles/caaae6486e1884f550547dece8c9533b/GTest-update.rule;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-download;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-update</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/ff4d7ddfe55bd64a371fdd714836b146/GTest-update.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-update</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No update step for 'GTest'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-update
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-update
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -224,18 +224,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz-master/build-win/CMakeFiles/caaae6486e1884f550547dece8c9533b/GTest-update.rule;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-download;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-update</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/ff4d7ddfe55bd64a371fdd714836b146/GTest-update.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-update</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz-master\build-win\CMakeFiles\caaae6486e1884f550547dece8c9533b\GTest-patch.rule">
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\ff4d7ddfe55bd64a371fdd714836b146\GTest-patch.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No patch step for 'GTest'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-patch
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-patch
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -243,14 +243,14 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz-master/build-win/CMakeFiles/caaae6486e1884f550547dece8c9533b/GTest-patch.rule;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-download;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-patch</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/ff4d7ddfe55bd64a371fdd714836b146/GTest-patch.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-patch</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No patch step for 'GTest'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-patch
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-patch
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -258,22 +258,22 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz-master/build-win/CMakeFiles/caaae6486e1884f550547dece8c9533b/GTest-patch.rule;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-download;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-patch</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/ff4d7ddfe55bd64a371fdd714836b146/GTest-patch.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-patch</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz-master\build-win\CMakeFiles\caaae6486e1884f550547dece8c9533b\GTest-configure.rule">
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\ff4d7ddfe55bd64a371fdd714836b146\GTest-configure.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing configure step for 'GTest'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-cd Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-build
+cd Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-build
 if %errorlevel% neq 0 goto :cmEnd
 Y:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" "-GVisual Studio 14 2015" Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest
+"C:\Program Files\CMake\bin\cmake.exe" "-GVisual Studio 14 2015" Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src/GTest
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-configure
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-configure
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -281,18 +281,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz-master/build-win/CMakeFiles/caaae6486e1884f550547dece8c9533b/GTest-configure.rule;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\tmp\GTest-cfgcmd.txt;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-update;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-patch;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-configure</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/ff4d7ddfe55bd64a371fdd714836b146/GTest-configure.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\tmp\GTest-cfgcmd.txt;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-update;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-configure</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing configure step for 'GTest'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-cd Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-build
+cd Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-build
 if %errorlevel% neq 0 goto :cmEnd
 Y:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" "-GVisual Studio 14 2015" Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest
+"C:\Program Files\CMake\bin\cmake.exe" "-GVisual Studio 14 2015" Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src/GTest
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-configure
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-configure
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -300,22 +300,22 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz-master/build-win/CMakeFiles/caaae6486e1884f550547dece8c9533b/GTest-configure.rule;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\tmp\GTest-cfgcmd.txt;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-update;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-patch;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-configure</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/ff4d7ddfe55bd64a371fdd714836b146/GTest-configure.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\tmp\GTest-cfgcmd.txt;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-update;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-configure</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz-master\build-win\CMakeFiles\caaae6486e1884f550547dece8c9533b\GTest-build.rule">
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\ff4d7ddfe55bd64a371fdd714836b146\GTest-build.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing build step for 'GTest'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-cd Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-build
+cd Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-build
 if %errorlevel% neq 0 goto :cmEnd
 Y:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cmake.exe" --build . --config Debug
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-build
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-build
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -323,18 +323,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz-master/build-win/CMakeFiles/caaae6486e1884f550547dece8c9533b/GTest-build.rule;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-configure;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-build</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/ff4d7ddfe55bd64a371fdd714836b146/GTest-build.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-build</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing build step for 'GTest'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-cd Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-build
+cd Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-build
 if %errorlevel% neq 0 goto :cmEnd
 Y:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cmake.exe" --build . --config Release
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-build
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-build
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -342,22 +342,22 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz-master/build-win/CMakeFiles/caaae6486e1884f550547dece8c9533b/GTest-build.rule;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-configure;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-build</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/ff4d7ddfe55bd64a371fdd714836b146/GTest-build.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-build</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz-master\build-win\CMakeFiles\caaae6486e1884f550547dece8c9533b\GTest-install.rule">
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\ff4d7ddfe55bd64a371fdd714836b146\GTest-install.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No install step for 'GTest'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-cd Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-build
+cd Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-build
 if %errorlevel% neq 0 goto :cmEnd
 Y:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-install
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-install
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -365,18 +365,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz-master/build-win/CMakeFiles/caaae6486e1884f550547dece8c9533b/GTest-install.rule;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-build;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-install</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/ff4d7ddfe55bd64a371fdd714836b146/GTest-install.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-install</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No install step for 'GTest'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-cd Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-build
+cd Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-build
 if %errorlevel% neq 0 goto :cmEnd
 Y:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-install
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-install
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -384,20 +384,20 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz-master/build-win/CMakeFiles/caaae6486e1884f550547dece8c9533b/GTest-install.rule;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-build;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-install</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/ff4d7ddfe55bd64a371fdd714836b146/GTest-install.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-install</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz-master\build-win\CMakeFiles\9016478572f0b72613a60a5e7d0e8627\GTest-complete.rule">
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\c742d891d8a988b6e2df5056a112e3ff\GTest-complete.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Completed 'GTest'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz-master/build-win/test/CMakeFiles/$(Configuration)
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz/build-win/test/CMakeFiles/$(Configuration)
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz-master/build-win/test/CMakeFiles/$(Configuration)/GTest-complete
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/CMakeFiles/$(Configuration)/GTest-complete
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-done
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-done
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -405,16 +405,16 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz-master/build-win/CMakeFiles/9016478572f0b72613a60a5e7d0e8627/GTest-complete.rule;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-install;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-mkdir;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-download;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-update;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-patch;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-configure;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-build;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-install;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz-master\build-win\test\CMakeFiles\$(Configuration)\GTest-complete</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/c742d891d8a988b6e2df5056a112e3ff/GTest-complete.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-install;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-mkdir;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-download;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-update;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-patch;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-configure;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-build;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\CMakeFiles\$(Configuration)\GTest-complete</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Completed 'GTest'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz-master/build-win/test/CMakeFiles/$(Configuration)
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz/build-win/test/CMakeFiles/$(Configuration)
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz-master/build-win/test/CMakeFiles/$(Configuration)/GTest-complete
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/CMakeFiles/$(Configuration)/GTest-complete
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz-master/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-done
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GTest-prefix/src/GTest-stamp/$(Configuration)/GTest-done
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -422,13 +422,13 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz-master/build-win/CMakeFiles/9016478572f0b72613a60a5e7d0e8627/GTest-complete.rule;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-install;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-mkdir;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-download;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-update;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-patch;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-configure;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-build;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-install;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz-master\build-win\test\CMakeFiles\$(Configuration)\GTest-complete</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/c742d891d8a988b6e2df5056a112e3ff/GTest-complete.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-install;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-mkdir;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-download;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-update;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-patch;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-configure;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-build;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest-stamp\$(Configuration)\GTest-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\CMakeFiles\$(Configuration)\GTest-complete</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz-master\build-win\CMakeFiles\ece2bfa65920540114a7ebc833cf7af9\GTest.rule">
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\55981a79cf7668684ff890b6bd0880db\GTest.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
 :cmEnd
@@ -437,8 +437,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz-master/build-win/CMakeFiles/ece2bfa65920540114a7ebc833cf7af9/GTest.rule;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\CMakeFiles\$(Configuration)\GTest-complete;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz-master\build-win\test\CMakeFiles\GTest</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/55981a79cf7668684ff890b6bd0880db/GTest.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\CMakeFiles\$(Configuration)\GTest-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\CMakeFiles\GTest</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
@@ -448,17 +448,17 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz-master/build-win/CMakeFiles/ece2bfa65920540114a7ebc833cf7af9/GTest.rule;Y:\Documents\work-ubuntu\rpcz-master\build-win\test\CMakeFiles\$(Configuration)\GTest-complete;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz-master\build-win\test\CMakeFiles\GTest</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/55981a79cf7668684ff890b6bd0880db/GTest.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\CMakeFiles\$(Configuration)\GTest-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\CMakeFiles\GTest</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Y:\Documents\work-ubuntu\rpcz-master\build-win\test\CMakeFiles\GTest" />
+    <None Include="Y:\Documents\work-ubuntu\rpcz\build-win\test\CMakeFiles\GTest" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Y:/Documents/work-ubuntu/rpcz-master/build-win/ZERO_CHECK.vcxproj">
-      <Project>213B317E-A61B-3E0B-B22B-40CA33229598</Project>
+    <ProjectReference Include="Y:/Documents/work-ubuntu/rpcz/build-win/ZERO_CHECK.vcxproj">
+      <Project>4093F993-75E2-3F04-9ED7-0C462FCA8C9F</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

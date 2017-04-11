@@ -1,0 +1,19 @@
+syntax = "proto3";
+package examples;
+
+message SearchRequest {
+   string query = 1;
+   oneof page_number_present {
+   int32 page_number = 2;
+  }
+  uint32 version = 3; 
+
+}
+
+message SearchResponse {
+  repeated string results = 1;
+}
+
+service SearchService {
+  rpc Search(SearchRequest) returns(SearchResponse);
+}

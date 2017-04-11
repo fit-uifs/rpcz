@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz-master\build-win\CMakeFiles\6bf54805853635920949b6f1a39aa2ff\RUN_TESTS_force.rule">
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\e8e1d07631561753a090d6e582e49bdd\RUN_TESTS_force.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{48F85F9B-8CBF-38A7-B4AC-536F93EFEB2C}</UniqueIdentifier>
+      <UniqueIdentifier>{9A40FE3A-04F2-3B2D-8AFE-6B1E67D12E0C}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

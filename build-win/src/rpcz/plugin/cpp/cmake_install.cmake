@@ -1,4 +1,4 @@
-# Install script for directory: Y:/Documents/work-ubuntu/rpcz-master/src/rpcz/plugin/cpp
+# Install script for directory: Y:/Documents/work-ubuntu/rpcz/src/rpcz/plugin/cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,9 +29,9 @@ endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "Y:/Documents/work-ubuntu/rpcz-master/build-win/src/rpcz/plugin/cpp/Debug/protoc-gen-cpp_rpcz.exe")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "Y:/Documents/work-ubuntu/rpcz/build-win/src/rpcz/plugin/cpp/Debug/protoc-gen-cpp_rpcz.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "Y:/Documents/work-ubuntu/rpcz-master/build-win/src/rpcz/plugin/cpp/Release/protoc-gen-cpp_rpcz.exe")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "Y:/Documents/work-ubuntu/rpcz/build-win/src/rpcz/plugin/cpp/Release/protoc-gen-cpp_rpcz.exe")
   endif()
 endif()
 

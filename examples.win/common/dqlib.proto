@@ -1,0 +1,46 @@
+﻿
+
+syntax = "proto3";
+package  examples;
+
+message Vector
+{
+  repeated double data = 2;
+}
+
+message Matrix
+{
+	enum StorageOrder
+	{
+		RowMajor = 0;
+		ColMajor = 1;
+	}
+	
+	int32 rows = 1;
+	int32 cols = 2;
+	repeated double data = 3;
+	StorageOrder storage_order = 4; 
+}
+
+message MvoAssetAllocationInput
+{
+	Matrix asset_return = 1;
+	string strategy = 2;
+	string target_type = 3;
+	Vector lower_bound = 4;
+	Vector upper_bound = 5;
+	double target_value = 6;
+	double annualization_scale = 7;
+	int32 num_returns_for_mean = 8;
+	int32 num_ef_points = 9;
+}
+
+message MvoAssetAllocationOutput
+{
+	 Vector weights = 1;
+	 double target_value = 2;
+}
+
+service DQService {
+  rpc CLAService(MvoAssetAllocationInput) returns (MvoAssetAllocationOutput);
+}
