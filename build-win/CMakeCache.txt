@@ -15,22 +15,22 @@
 ########################
 
 //Boost atomic library (debug)
-Boost_ATOMIC_LIBRARY_DEBUG:FILEPATH=C:/boost_1_59_0/lib64-msvc-14.0/libboost_atomic-vc140-mt-gd-1_59.lib
+Boost_ATOMIC_LIBRARY_DEBUG:FILEPATH=C:/boost_1_59_0/lib64-msvc-14.0/boost_atomic-vc140-mt-gd-1_59.lib
 
 //Boost atomic library (release)
-Boost_ATOMIC_LIBRARY_RELEASE:FILEPATH=C:/boost_1_59_0/lib64-msvc-14.0/libboost_atomic-vc140-mt-1_59.lib
+Boost_ATOMIC_LIBRARY_RELEASE:FILEPATH=C:/boost_1_59_0/lib64-msvc-14.0/boost_atomic-vc140-mt-1_59.lib
 
 //Boost chrono library (debug)
-Boost_CHRONO_LIBRARY_DEBUG:FILEPATH=C:/boost_1_59_0/lib64-msvc-14.0/libboost_chrono-vc140-mt-gd-1_59.lib
+Boost_CHRONO_LIBRARY_DEBUG:FILEPATH=C:/boost_1_59_0/lib64-msvc-14.0/boost_chrono-vc140-mt-gd-1_59.lib
 
 //Boost chrono library (release)
-Boost_CHRONO_LIBRARY_RELEASE:FILEPATH=C:/boost_1_59_0/lib64-msvc-14.0/libboost_chrono-vc140-mt-1_59.lib
+Boost_CHRONO_LIBRARY_RELEASE:FILEPATH=C:/boost_1_59_0/lib64-msvc-14.0/boost_chrono-vc140-mt-1_59.lib
 
 //Boost date_time library (debug)
-Boost_DATE_TIME_LIBRARY_DEBUG:FILEPATH=C:/boost_1_59_0/lib64-msvc-14.0/libboost_date_time-vc140-mt-gd-1_59.lib
+Boost_DATE_TIME_LIBRARY_DEBUG:FILEPATH=C:/boost_1_59_0/lib64-msvc-14.0/boost_date_time-vc140-mt-gd-1_59.lib
 
 //Boost date_time library (release)
-Boost_DATE_TIME_LIBRARY_RELEASE:FILEPATH=C:/boost_1_59_0/lib64-msvc-14.0/libboost_date_time-vc140-mt-1_59.lib
+Boost_DATE_TIME_LIBRARY_RELEASE:FILEPATH=C:/boost_1_59_0/lib64-msvc-14.0/boost_date_time-vc140-mt-1_59.lib
 
 //The directory containing a CMake configuration file for Boost.
 Boost_DIR:PATH=Boost_DIR-NOTFOUND
@@ -45,22 +45,22 @@ Boost_LIBRARY_DIR_DEBUG:PATH=C:/boost_1_59_0/lib64-msvc-14.0
 Boost_LIBRARY_DIR_RELEASE:PATH=C:/boost_1_59_0/lib64-msvc-14.0
 
 //Boost program_options library (debug)
-Boost_PROGRAM_OPTIONS_LIBRARY_DEBUG:FILEPATH=C:/boost_1_59_0/lib64-msvc-14.0/libboost_program_options-vc140-mt-gd-1_59.lib
+Boost_PROGRAM_OPTIONS_LIBRARY_DEBUG:FILEPATH=C:/boost_1_59_0/lib64-msvc-14.0/boost_program_options-vc140-mt-gd-1_59.lib
 
 //Boost program_options library (release)
-Boost_PROGRAM_OPTIONS_LIBRARY_RELEASE:FILEPATH=C:/boost_1_59_0/lib64-msvc-14.0/libboost_program_options-vc140-mt-1_59.lib
+Boost_PROGRAM_OPTIONS_LIBRARY_RELEASE:FILEPATH=C:/boost_1_59_0/lib64-msvc-14.0/boost_program_options-vc140-mt-1_59.lib
 
 //Boost system library (debug)
-Boost_SYSTEM_LIBRARY_DEBUG:FILEPATH=C:/boost_1_59_0/lib64-msvc-14.0/libboost_system-vc140-mt-gd-1_59.lib
+Boost_SYSTEM_LIBRARY_DEBUG:FILEPATH=C:/boost_1_59_0/lib64-msvc-14.0/boost_system-vc140-mt-gd-1_59.lib
 
 //Boost system library (release)
-Boost_SYSTEM_LIBRARY_RELEASE:FILEPATH=C:/boost_1_59_0/lib64-msvc-14.0/libboost_system-vc140-mt-1_59.lib
+Boost_SYSTEM_LIBRARY_RELEASE:FILEPATH=C:/boost_1_59_0/lib64-msvc-14.0/boost_system-vc140-mt-1_59.lib
 
 //Boost thread library (debug)
-Boost_THREAD_LIBRARY_DEBUG:FILEPATH=C:/boost_1_59_0/lib64-msvc-14.0/libboost_thread-vc140-mt-gd-1_59.lib
+Boost_THREAD_LIBRARY_DEBUG:FILEPATH=C:/boost_1_59_0/lib64-msvc-14.0/boost_thread-vc140-mt-gd-1_59.lib
 
 //Boost thread library (release)
-Boost_THREAD_LIBRARY_RELEASE:FILEPATH=C:/boost_1_59_0/lib64-msvc-14.0/libboost_thread-vc140-mt-1_59.lib
+Boost_THREAD_LIBRARY_RELEASE:FILEPATH=C:/boost_1_59_0/lib64-msvc-14.0/boost_thread-vc140-mt-1_59.lib
 
 //Semicolon separated list of supported configuration types, only
 // supports Debug, Release, MinSizeRel, and RelWithDebInfo, anything
@@ -248,7 +248,7 @@ example_pb_LIB_DEPENDS:STATIC=general;rt;general;Y:/Documents/work-ubuntu/dqlib_
 rpcz_BINARY_DIR:STATIC=Y:/Documents/work-ubuntu/rpcz/build-win
 
 //Dependencies for the target
-rpcz_LIB_DEPENDS:STATIC=general;Y:/Documents/work-ubuntu/dqlib_dev/external/protobuf-3.1.0/vsprojects/release/libprotobuf.lib;optimized;C:/boost_1_59_0/lib64-msvc-14.0/libboost_thread-vc140-mt-1_59.lib;debug;C:/boost_1_59_0/lib64-msvc-14.0/libboost_thread-vc140-mt-gd-1_59.lib;optimized;C:/boost_1_59_0/lib64-msvc-14.0/libboost_program_options-vc140-mt-1_59.lib;debug;C:/boost_1_59_0/lib64-msvc-14.0/libboost_program_options-vc140-mt-gd-1_59.lib;optimized;C:/boost_1_59_0/lib64-msvc-14.0/libboost_system-vc140-mt-1_59.lib;debug;C:/boost_1_59_0/lib64-msvc-14.0/libboost_system-vc140-mt-gd-1_59.lib;optimized;C:/boost_1_59_0/lib64-msvc-14.0/libboost_date_time-vc140-mt-1_59.lib;debug;C:/boost_1_59_0/lib64-msvc-14.0/libboost_date_time-vc140-mt-gd-1_59.lib;optimized;C:/boost_1_59_0/lib64-msvc-14.0/libboost_chrono-vc140-mt-1_59.lib;debug;C:/boost_1_59_0/lib64-msvc-14.0/libboost_chrono-vc140-mt-gd-1_59.lib;optimized;C:/boost_1_59_0/lib64-msvc-14.0/libboost_atomic-vc140-mt-1_59.lib;debug;C:/boost_1_59_0/lib64-msvc-14.0/libboost_atomic-vc140-mt-gd-1_59.lib;
+rpcz_LIB_DEPENDS:STATIC=optimized;C:/Program Files/ZeroMQ 4.0.4/lib;debug;C:/Program Files/ZeroMQ 4.0.4/lib;optimized;C:/Program Files/ZeroMQ 4.0.4/lib;debug;C:/Program Files/ZeroMQ 4.0.4/lib;optimized;Y:/Documents/work-ubuntu/dqlib_dev/external/protobuf-3.1.0/vsprojects/release/libprotobuf.lib;debug;Y:/Documents/work-ubuntu/dqlib_dev/external/protobuf-3.1.0/vsprojects/debug/libprotobuf.lib;optimized;C:/boost_1_59_0/lib64-msvc-14.0/boost_thread-vc140-mt-1_59.lib;debug;C:/boost_1_59_0/lib64-msvc-14.0/boost_thread-vc140-mt-gd-1_59.lib;optimized;C:/boost_1_59_0/lib64-msvc-14.0/boost_program_options-vc140-mt-1_59.lib;debug;C:/boost_1_59_0/lib64-msvc-14.0/boost_program_options-vc140-mt-gd-1_59.lib;optimized;C:/boost_1_59_0/lib64-msvc-14.0/boost_system-vc140-mt-1_59.lib;debug;C:/boost_1_59_0/lib64-msvc-14.0/boost_system-vc140-mt-gd-1_59.lib;optimized;C:/boost_1_59_0/lib64-msvc-14.0/boost_date_time-vc140-mt-1_59.lib;debug;C:/boost_1_59_0/lib64-msvc-14.0/boost_date_time-vc140-mt-gd-1_59.lib;optimized;C:/boost_1_59_0/lib64-msvc-14.0/boost_chrono-vc140-mt-1_59.lib;debug;C:/boost_1_59_0/lib64-msvc-14.0/boost_chrono-vc140-mt-gd-1_59.lib;optimized;C:/boost_1_59_0/lib64-msvc-14.0/boost_atomic-vc140-mt-1_59.lib;debug;C:/boost_1_59_0/lib64-msvc-14.0/boost_atomic-vc140-mt-gd-1_59.lib;
 
 //Value Computed by CMake
 rpcz_SOURCE_DIR:STATIC=Y:/Documents/work-ubuntu/rpcz
@@ -423,7 +423,7 @@ CPACK_SOURCE_7Z-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CPACK_SOURCE_ZIP
 CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
 //Details about finding PROTOBUF
-FIND_PACKAGE_MESSAGE_DETAILS_PROTOBUF:INTERNAL=[Y:/Documents/work-ubuntu/dqlib_dev/external/protobuf-3.1.0/vsprojects/release/libprotobuf.lib][Y:/Documents/work-ubuntu/dqlib_dev/external/protobuf-3.1.0/include][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_PROTOBUF:INTERNAL=[Y:/Documents/work-ubuntu/dqlib_dev/external/protobuf-3.1.0/vsprojects/release/libprotobuf.lib][Y:/Documents/work-ubuntu/dqlib_dev/external/protobuf-3.1.0/src][v()]
 //Details about finding Protobuf
 FIND_PACKAGE_MESSAGE_DETAILS_Protobuf:INTERNAL=[Y:/Documents/work-ubuntu/dqlib_dev/external/protobuf-3.1.0/vsprojects/release/libprotobuf.lib][Y:/Documents/work-ubuntu/dqlib_dev/external/protobuf-3.1.0/include][v3.1.0()]
 //Details about finding Threads
@@ -450,10 +450,6 @@ Protobuf_INCLUDE_DIR-ADVANCED:INTERNAL=1
 Protobuf_PROTOC_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ZeroMQ_INCLUDE_DIR
 ZeroMQ_INCLUDE_DIR-ADVANCED:INTERNAL=1
-//Last used BOOST_ROOT value.
-_BOOST_ROOT_LAST:INTERNAL=c:/boost_1_59_0
-//Last used Boost_COMPILER value.
-_Boost_COMPILER_LAST:INTERNAL=-vc140
 //Components requested for this build tree.
 _Boost_COMPONENTS_SEARCHED:INTERNAL=atomic;chrono;date_time;program_options;system;thread
 //Last used Boost_INCLUDE_DIR value.
@@ -467,5 +463,7 @@ _Boost_NAMESPACE_LAST:INTERNAL=boost
 //Last used Boost_USE_MULTITHREADED value.
 _Boost_USE_MULTITHREADED_LAST:INTERNAL=ON
 //Last used Boost_USE_STATIC_LIBS value.
-_Boost_USE_STATIC_LIBS_LAST:INTERNAL=ON
+_Boost_USE_STATIC_LIBS_LAST:INTERNAL=OFF
+//Last used Boost_USE_STATIC_RUNTIME value.
+_Boost_USE_STATIC_RUNTIME_LAST:INTERNAL=OFF
 

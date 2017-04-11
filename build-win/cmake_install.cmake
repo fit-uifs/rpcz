@@ -50,8 +50,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("Y:/Documents/work-ubuntu/rpcz/build-win/src/cmake_install.cmake")
   include("Y:/Documents/work-ubuntu/rpcz/build-win/test/cmake_install.cmake")
+  include("Y:/Documents/work-ubuntu/rpcz/build-win/src/cmake_install.cmake")
   include("Y:/Documents/work-ubuntu/rpcz/build-win/examples/cpp/cmake_install.cmake")
 
 endif()

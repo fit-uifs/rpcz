@@ -15,8 +15,13 @@
 // Author: nadavs@google.com <Nadav Samet>
 
 #include <iostream>
-#include "rpcz/rpcz.hpp"
 
+#ifdef _WIN32 || WIN32
+#define GLOG_NO_ABBREVIATED_SEVERITIES
+//#include <windows.h>
+#endif
+
+#include "rpcz/rpcz.hpp"
 #include "cpp/search.pb.h"
 #include "cpp/search.rpcz.h"
 #include "cpp/dqlib.pb.h"
@@ -31,6 +36,7 @@
 #include<iomanip>
 #include <iostream>
 #include <boost/thread/thread.hpp>
+
 #include <glog/logging.h>
 #include "rpcz/callback.hpp"
 #include "rpcz/connection_manager.hpp"

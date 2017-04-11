@@ -43,6 +43,10 @@ if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMP
   endif()
 endif()
 
+if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/rpcz" TYPE FILE FILES "Y:/Documents/work-ubuntu/rpcz/build-win/src/rpcz/rpcz.pb.h")
+endif()
+
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("Y:/Documents/work-ubuntu/rpcz/build-win/src/rpcz/plugin/cmake_install.cmake")
