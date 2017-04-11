@@ -1,4 +1,4 @@
-# Install script for directory: /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/examples/cpp
+# Install script for directory: /media/psf/Home/Documents/work-ubuntu/rpcz/examples/cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

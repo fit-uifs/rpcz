@@ -48,10 +48,10 @@ RM = /media/psf/Home/Documents/work-ubuntu/clion-2016.3.1/bin/cmake/bin/cmake -E
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok
+CMAKE_SOURCE_DIR = /media/psf/Home/Documents/work-ubuntu/rpcz
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug
+CMAKE_BINARY_DIR = /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cm
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && /media/psf/Home/Documents/work-ubuntu/clion-2016.3.1/bin/cmake/bin/cpack --config ./CPackConfig.cmake
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && /media/psf/Home/Documents/work-ubuntu/clion-2016.3.1/bin/cmake/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -81,7 +81,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && /media/psf/Home/Documents/work-ubuntu/clion-2016.3.1/bin/cmake/bin/cpack --config ./CPackSourceConfig.cmake /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug/CPackSourceConfig.cmake
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && /media/psf/Home/Documents/work-ubuntu/clion-2016.3.1/bin/cmake/bin/cpack --config ./CPackSourceConfig.cmake /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -146,14 +146,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug/CMakeFiles /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug/examples/cpp/CMakeFiles/progress.marks
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/cpp/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug/CMakeFiles 0
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug/CMakeFiles /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug/examples/cpp/CMakeFiles/progress.marks
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/cpp/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/cpp/clean
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/cpp/clean
 .PHONY : clean
 
 # The main clean target
@@ -163,22 +163,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/cpp/preinstall
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/cpp/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/cpp/preinstall
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/cpp/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 examples/cpp/CMakeFiles/example_server.dir/rule:
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/cpp/CMakeFiles/example_server.dir/rule
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/cpp/CMakeFiles/example_server.dir/rule
 .PHONY : examples/cpp/CMakeFiles/example_server.dir/rule
 
 # Convenience name for target.
@@ -188,12 +188,12 @@ example_server: examples/cpp/CMakeFiles/example_server.dir/rule
 
 # fast build rule for target.
 example_server/fast:
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_server.dir/build.make examples/cpp/CMakeFiles/example_server.dir/build
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_server.dir/build.make examples/cpp/CMakeFiles/example_server.dir/build
 .PHONY : example_server/fast
 
 # Convenience name for target.
 examples/cpp/CMakeFiles/example_client.dir/rule:
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/cpp/CMakeFiles/example_client.dir/rule
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/cpp/CMakeFiles/example_client.dir/rule
 .PHONY : examples/cpp/CMakeFiles/example_client.dir/rule
 
 # Convenience name for target.
@@ -203,12 +203,12 @@ example_client: examples/cpp/CMakeFiles/example_client.dir/rule
 
 # fast build rule for target.
 example_client/fast:
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_client.dir/build.make examples/cpp/CMakeFiles/example_client.dir/build
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_client.dir/build.make examples/cpp/CMakeFiles/example_client.dir/build
 .PHONY : example_client/fast
 
 # Convenience name for target.
 examples/cpp/CMakeFiles/example_pb.dir/rule:
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/cpp/CMakeFiles/example_pb.dir/rule
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/cpp/CMakeFiles/example_pb.dir/rule
 .PHONY : examples/cpp/CMakeFiles/example_pb.dir/rule
 
 # Convenience name for target.
@@ -218,7 +218,7 @@ example_pb: examples/cpp/CMakeFiles/example_pb.dir/rule
 
 # fast build rule for target.
 example_pb/fast:
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/build
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/build
 .PHONY : example_pb/fast
 
 dqlib.pb.o: dqlib.pb.cc.o
@@ -227,7 +227,7 @@ dqlib.pb.o: dqlib.pb.cc.o
 
 # target to build an object file
 dqlib.pb.cc.o:
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/dqlib.pb.cc.o
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/dqlib.pb.cc.o
 .PHONY : dqlib.pb.cc.o
 
 dqlib.pb.i: dqlib.pb.cc.i
@@ -236,7 +236,7 @@ dqlib.pb.i: dqlib.pb.cc.i
 
 # target to preprocess a source file
 dqlib.pb.cc.i:
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/dqlib.pb.cc.i
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/dqlib.pb.cc.i
 .PHONY : dqlib.pb.cc.i
 
 dqlib.pb.s: dqlib.pb.cc.s
@@ -245,7 +245,7 @@ dqlib.pb.s: dqlib.pb.cc.s
 
 # target to generate assembly for a file
 dqlib.pb.cc.s:
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/dqlib.pb.cc.s
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/dqlib.pb.cc.s
 .PHONY : dqlib.pb.cc.s
 
 dqlib.rpcz.o: dqlib.rpcz.cc.o
@@ -254,7 +254,7 @@ dqlib.rpcz.o: dqlib.rpcz.cc.o
 
 # target to build an object file
 dqlib.rpcz.cc.o:
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/dqlib.rpcz.cc.o
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/dqlib.rpcz.cc.o
 .PHONY : dqlib.rpcz.cc.o
 
 dqlib.rpcz.i: dqlib.rpcz.cc.i
@@ -263,7 +263,7 @@ dqlib.rpcz.i: dqlib.rpcz.cc.i
 
 # target to preprocess a source file
 dqlib.rpcz.cc.i:
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/dqlib.rpcz.cc.i
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/dqlib.rpcz.cc.i
 .PHONY : dqlib.rpcz.cc.i
 
 dqlib.rpcz.s: dqlib.rpcz.cc.s
@@ -272,7 +272,7 @@ dqlib.rpcz.s: dqlib.rpcz.cc.s
 
 # target to generate assembly for a file
 dqlib.rpcz.cc.s:
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/dqlib.rpcz.cc.s
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/dqlib.rpcz.cc.s
 .PHONY : dqlib.rpcz.cc.s
 
 example_client.o: example_client.cc.o
@@ -281,7 +281,7 @@ example_client.o: example_client.cc.o
 
 # target to build an object file
 example_client.cc.o:
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_client.dir/build.make examples/cpp/CMakeFiles/example_client.dir/example_client.cc.o
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_client.dir/build.make examples/cpp/CMakeFiles/example_client.dir/example_client.cc.o
 .PHONY : example_client.cc.o
 
 example_client.i: example_client.cc.i
@@ -290,7 +290,7 @@ example_client.i: example_client.cc.i
 
 # target to preprocess a source file
 example_client.cc.i:
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_client.dir/build.make examples/cpp/CMakeFiles/example_client.dir/example_client.cc.i
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_client.dir/build.make examples/cpp/CMakeFiles/example_client.dir/example_client.cc.i
 .PHONY : example_client.cc.i
 
 example_client.s: example_client.cc.s
@@ -299,7 +299,7 @@ example_client.s: example_client.cc.s
 
 # target to generate assembly for a file
 example_client.cc.s:
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_client.dir/build.make examples/cpp/CMakeFiles/example_client.dir/example_client.cc.s
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_client.dir/build.make examples/cpp/CMakeFiles/example_client.dir/example_client.cc.s
 .PHONY : example_client.cc.s
 
 example_server.o: example_server.cc.o
@@ -308,7 +308,7 @@ example_server.o: example_server.cc.o
 
 # target to build an object file
 example_server.cc.o:
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_server.dir/build.make examples/cpp/CMakeFiles/example_server.dir/example_server.cc.o
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_server.dir/build.make examples/cpp/CMakeFiles/example_server.dir/example_server.cc.o
 .PHONY : example_server.cc.o
 
 example_server.i: example_server.cc.i
@@ -317,7 +317,7 @@ example_server.i: example_server.cc.i
 
 # target to preprocess a source file
 example_server.cc.i:
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_server.dir/build.make examples/cpp/CMakeFiles/example_server.dir/example_server.cc.i
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_server.dir/build.make examples/cpp/CMakeFiles/example_server.dir/example_server.cc.i
 .PHONY : example_server.cc.i
 
 example_server.s: example_server.cc.s
@@ -326,7 +326,7 @@ example_server.s: example_server.cc.s
 
 # target to generate assembly for a file
 example_server.cc.s:
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_server.dir/build.make examples/cpp/CMakeFiles/example_server.dir/example_server.cc.s
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_server.dir/build.make examples/cpp/CMakeFiles/example_server.dir/example_server.cc.s
 .PHONY : example_server.cc.s
 
 inirw.o: inirw.c.o
@@ -335,7 +335,7 @@ inirw.o: inirw.c.o
 
 # target to build an object file
 inirw.c.o:
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/inirw.c.o
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/inirw.c.o
 .PHONY : inirw.c.o
 
 inirw.i: inirw.c.i
@@ -344,7 +344,7 @@ inirw.i: inirw.c.i
 
 # target to preprocess a source file
 inirw.c.i:
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/inirw.c.i
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/inirw.c.i
 .PHONY : inirw.c.i
 
 inirw.s: inirw.c.s
@@ -353,7 +353,7 @@ inirw.s: inirw.c.s
 
 # target to generate assembly for a file
 inirw.c.s:
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/inirw.c.s
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/inirw.c.s
 .PHONY : inirw.c.s
 
 search.pb.o: search.pb.cc.o
@@ -362,7 +362,7 @@ search.pb.o: search.pb.cc.o
 
 # target to build an object file
 search.pb.cc.o:
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/search.pb.cc.o
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/search.pb.cc.o
 .PHONY : search.pb.cc.o
 
 search.pb.i: search.pb.cc.i
@@ -371,7 +371,7 @@ search.pb.i: search.pb.cc.i
 
 # target to preprocess a source file
 search.pb.cc.i:
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/search.pb.cc.i
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/search.pb.cc.i
 .PHONY : search.pb.cc.i
 
 search.pb.s: search.pb.cc.s
@@ -380,7 +380,7 @@ search.pb.s: search.pb.cc.s
 
 # target to generate assembly for a file
 search.pb.cc.s:
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/search.pb.cc.s
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/search.pb.cc.s
 .PHONY : search.pb.cc.s
 
 search.rpcz.o: search.rpcz.cc.o
@@ -389,7 +389,7 @@ search.rpcz.o: search.rpcz.cc.o
 
 # target to build an object file
 search.rpcz.cc.o:
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/search.rpcz.cc.o
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/search.rpcz.cc.o
 .PHONY : search.rpcz.cc.o
 
 search.rpcz.i: search.rpcz.cc.i
@@ -398,7 +398,7 @@ search.rpcz.i: search.rpcz.cc.i
 
 # target to preprocess a source file
 search.rpcz.cc.i:
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/search.rpcz.cc.i
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/search.rpcz.cc.i
 .PHONY : search.rpcz.cc.i
 
 search.rpcz.s: search.rpcz.cc.s
@@ -407,7 +407,7 @@ search.rpcz.s: search.rpcz.cc.s
 
 # target to generate assembly for a file
 search.rpcz.cc.s:
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/search.rpcz.cc.s
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(MAKE) -f examples/cpp/CMakeFiles/example_pb.dir/build.make examples/cpp/CMakeFiles/example_pb.dir/search.rpcz.cc.s
 .PHONY : search.rpcz.cc.s
 
 # Help Target
@@ -459,6 +459,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /media/psf/Home/Documents/work-ubuntu/rpcz/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

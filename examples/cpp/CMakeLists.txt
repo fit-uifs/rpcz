@@ -6,7 +6,7 @@ include_directories("/media/psf/Home/Documents/work-ubuntu/rpcz-master-linux-ok/
 
 find_package(ProtobufPlugin REQUIRED)
 PROTOBUF_GENERATE_CPP(SEARCH_PB_SRCS SEARCH_PB_HDRS ../common/search.proto)
-PROTOBUF_GENERATE_RPCZ(SEARCH_RPCZ_SRCS SEARCH_RPCZ_HDRS ../common/search.proto)
+#PROTOBUF_GENERATE_RPCZ(SEARCH_RPCZ_SRCS SEARCH_RPCZ_HDRS ../common/search.proto)
 
 #SET (SEARCH_PB_SRCS
 #        search.pb.cc
