@@ -62,9 +62,9 @@ class message_vector;
 class connection_manager {
  public:
   enum status {
-    INACTIVE = 0,
-    ACTIVE = 1,
-    DONE = 2,
+      DONE = 0,
+    INACTIVE = 1,
+    ACTIVE = 2,
     DEADLINE_EXCEEDED = 3,
   };
 

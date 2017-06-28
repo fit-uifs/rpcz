@@ -1,0 +1,32 @@
+syntax = "proto3";
+package rpcz;
+
+message rpc_request_header {
+   int64 event_id = 1;
+   int32 deadline = 2;
+   string service = 3;
+   string method = 4;
+}
+
+message rpc_response_header {
+  enum status_code {
+    OK = 0;  // Done  
+    INACTIVE = 1;
+    ACTIVE = 2;
+    CANCELLED = 3;
+    APPLICATION_ERROR = 4;
+    DEADLINE_EXCEEDED = 5;
+    TERMINATED = 6;
+  }
+  enum application_error_code {
+    NO_ERROR = 0;
+    INVALID_HEADER = -1;
+    NO_SUCH_SERVICE = -2;
+    NO_SUCH_METHOD = -3;
+    INVALID_MESSAGE = -4;
+    METHOD_NOT_IMPLEMENTED = -5;
+  }
+   status_code status = 1 ;
+   int32 application_error = 2 ;
+   string error = 3;
+}

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\test\CMakeLists.txt" />
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\ef13d8f8e203ba019514d66c86741e10\GLog-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\ef13d8f8e203ba019514d66c86741e10\GLog-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\ef13d8f8e203ba019514d66c86741e10\GLog-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\ef13d8f8e203ba019514d66c86741e10\GLog-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\ef13d8f8e203ba019514d66c86741e10\GLog-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\ef13d8f8e203ba019514d66c86741e10\GLog-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\ef13d8f8e203ba019514d66c86741e10\GLog-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\c742d891d8a988b6e2df5056a112e3ff\GLog-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\55981a79cf7668684ff890b6bd0880db\GLog.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Y:\Documents\work-ubuntu\rpcz\build-win\test\CMakeFiles\GLog" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{9A40FE3A-04F2-3B2D-8AFE-6B1E67D12E0C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

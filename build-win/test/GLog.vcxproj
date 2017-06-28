@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{5F721DCF-E9D4-3FEB-8AF3-2EBD06EB9346}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>GLog</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>Y:\Documents\work-ubuntu\dqlib_dev\external\protobuf-3.1.0\include;Y:\Documents\work-ubuntu\rpcz\src\rpcz;Y:\Documents\work-ubuntu\rpcz\include\rpcz;Y:\Documents\work-ubuntu\libzmq\include;C:\boost_1_59_0;Y:\Documents\work-ubuntu\rpcz\include;Y:\Documents\work-ubuntu\rpcz\build-win\src;Y:\Documents\work-ubuntu\rpcz\build-win\test;Y:\Documents\work-ubuntu\rpcz\src;Y:\Documents\work-ubuntu\rpcz\build-win\deps\include;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>Y:\Documents\work-ubuntu\dqlib_dev\external\protobuf-3.1.0\include;Y:\Documents\work-ubuntu\rpcz\src\rpcz;Y:\Documents\work-ubuntu\rpcz\include\rpcz;Y:\Documents\work-ubuntu\libzmq\include;C:\boost_1_59_0;Y:\Documents\work-ubuntu\rpcz\include;Y:\Documents\work-ubuntu\rpcz\build-win\src;Y:\Documents\work-ubuntu\rpcz\build-win\test;Y:\Documents\work-ubuntu\rpcz\src;Y:\Documents\work-ubuntu\rpcz\build-win\deps\include;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\src\GTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\test\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule Y:/Documents/work-ubuntu/rpcz/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HY:/Documents/work-ubuntu/rpcz -BY:/Documents/work-ubuntu/rpcz/build-win --check-stamp-file Y:\Documents\work-ubuntu\rpcz\build-win\test\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz/test/CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz\test\CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz\cmake_modules\build_deps.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;Y:\Documents\work-ubuntu\rpcz\cmake_modules\library_suffix.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.6\Modules\ExternalProject-download.cmake.in;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\tmp\GLog-cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.6\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.6\Modules\ExternalProject-download.cmake.in;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\tmp\GTest-cfgcmd.txt.in;Y:\Documents\work-ubuntu\rpcz\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule Y:/Documents/work-ubuntu/rpcz/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HY:/Documents/work-ubuntu/rpcz -BY:/Documents/work-ubuntu/rpcz/build-win --check-stamp-file Y:\Documents\work-ubuntu\rpcz\build-win\test\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz/test/CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz\test\CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz\cmake_modules\build_deps.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;Y:\Documents\work-ubuntu\rpcz\cmake_modules\library_suffix.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.6\Modules\ExternalProject-download.cmake.in;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\tmp\GLog-cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.6\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.6\Modules\ExternalProject-download.cmake.in;Y:\Documents\work-ubuntu\rpcz\build-win\test\GTest-prefix\tmp\GTest-cfgcmd.txt.in;Y:\Documents\work-ubuntu\rpcz\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\ef13d8f8e203ba019514d66c86741e10\GLog-mkdir.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Creating directories for 'GLog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/src/GLog
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/src/GLog-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz/build-win/deps
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/src/GLog-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/src/GLog-stamp/$(Configuration)/GLog-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/ef13d8f8e203ba019514d66c86741e10/GLog-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Creating directories for 'GLog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/src/GLog
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/src/GLog-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz/build-win/deps
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/src/GLog-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/src/GLog-stamp/$(Configuration)/GLog-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/ef13d8f8e203ba019514d66c86741e10/GLog-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\ef13d8f8e203ba019514d66c86741e10\GLog-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing download step (download, verify and extract) for 'GLog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+Y:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/src/GLog-stamp/download-GLog.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/src/GLog-stamp/verify-GLog.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/src/GLog-stamp/extract-GLog.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/src/GLog-stamp/$(Configuration)/GLog-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/ef13d8f8e203ba019514d66c86741e10/GLog-download.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\GLog-urlinfo.txt;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing download step (download, verify and extract) for 'GLog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+Y:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/src/GLog-stamp/download-GLog.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/src/GLog-stamp/verify-GLog.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/src/GLog-stamp/extract-GLog.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/src/GLog-stamp/$(Configuration)/GLog-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/ef13d8f8e203ba019514d66c86741e10/GLog-download.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\GLog-urlinfo.txt;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\ef13d8f8e203ba019514d66c86741e10\GLog-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No update step for 'GLog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/src/GLog-stamp/$(Configuration)/GLog-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/ef13d8f8e203ba019514d66c86741e10/GLog-update.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No update step for 'GLog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/src/GLog-stamp/$(Configuration)/GLog-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/ef13d8f8e203ba019514d66c86741e10/GLog-update.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\ef13d8f8e203ba019514d66c86741e10\GLog-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No patch step for 'GLog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/src/GLog-stamp/$(Configuration)/GLog-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/ef13d8f8e203ba019514d66c86741e10/GLog-patch.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No patch step for 'GLog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/src/GLog-stamp/$(Configuration)/GLog-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/ef13d8f8e203ba019514d66c86741e10/GLog-patch.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\ef13d8f8e203ba019514d66c86741e10\GLog-configure.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing configure step for 'GLog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-build
+if %errorlevel% neq 0 goto :cmEnd
+Y:
+if %errorlevel% neq 0 goto :cmEnd
+Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog\configure --prefix=Y:/Documents/work-ubuntu/rpcz/build-win/deps
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/src/GLog-stamp/$(Configuration)/GLog-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/ef13d8f8e203ba019514d66c86741e10/GLog-configure.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\tmp\GLog-cfgcmd.txt;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-update;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing configure step for 'GLog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-build
+if %errorlevel% neq 0 goto :cmEnd
+Y:
+if %errorlevel% neq 0 goto :cmEnd
+Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog\configure --prefix=Y:/Documents/work-ubuntu/rpcz/build-win/deps
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/src/GLog-stamp/$(Configuration)/GLog-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/ef13d8f8e203ba019514d66c86741e10/GLog-configure.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\tmp\GLog-cfgcmd.txt;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-update;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\ef13d8f8e203ba019514d66c86741e10\GLog-build.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing build step for 'GLog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-build
+if %errorlevel% neq 0 goto :cmEnd
+Y:
+if %errorlevel% neq 0 goto :cmEnd
+make
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/src/GLog-stamp/$(Configuration)/GLog-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/ef13d8f8e203ba019514d66c86741e10/GLog-build.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing build step for 'GLog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-build
+if %errorlevel% neq 0 goto :cmEnd
+Y:
+if %errorlevel% neq 0 goto :cmEnd
+make
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/src/GLog-stamp/$(Configuration)/GLog-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/ef13d8f8e203ba019514d66c86741e10/GLog-build.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\ef13d8f8e203ba019514d66c86741e10\GLog-install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing install step for 'GLog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-build
+if %errorlevel% neq 0 goto :cmEnd
+Y:
+if %errorlevel% neq 0 goto :cmEnd
+make install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/src/GLog-stamp/$(Configuration)/GLog-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/ef13d8f8e203ba019514d66c86741e10/GLog-install.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing install step for 'GLog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-build
+if %errorlevel% neq 0 goto :cmEnd
+Y:
+if %errorlevel% neq 0 goto :cmEnd
+make install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/src/GLog-stamp/$(Configuration)/GLog-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/ef13d8f8e203ba019514d66c86741e10/GLog-install.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\c742d891d8a988b6e2df5056a112e3ff\GLog-complete.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Completed 'GLog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz/build-win/test/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/CMakeFiles/$(Configuration)/GLog-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/src/GLog-stamp/$(Configuration)/GLog-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/c742d891d8a988b6e2df5056a112e3ff/GLog-complete.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-install;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-mkdir;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-download;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-update;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-patch;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-configure;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-build;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\CMakeFiles\$(Configuration)\GLog-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Completed 'GLog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory Y:/Documents/work-ubuntu/rpcz/build-win/test/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/CMakeFiles/$(Configuration)/GLog-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch Y:/Documents/work-ubuntu/rpcz/build-win/test/GLog-prefix/src/GLog-stamp/$(Configuration)/GLog-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/c742d891d8a988b6e2df5056a112e3ff/GLog-complete.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-install;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-mkdir;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-download;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-update;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-patch;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-configure;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-build;Y:\Documents\work-ubuntu\rpcz\build-win\test\GLog-prefix\src\GLog-stamp\$(Configuration)\GLog-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\CMakeFiles\$(Configuration)\GLog-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\55981a79cf7668684ff890b6bd0880db\GLog.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/55981a79cf7668684ff890b6bd0880db/GLog.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\CMakeFiles\$(Configuration)\GLog-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\CMakeFiles\GLog</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/55981a79cf7668684ff890b6bd0880db/GLog.rule;Y:\Documents\work-ubuntu\rpcz\build-win\test\CMakeFiles\$(Configuration)\GLog-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\CMakeFiles\GLog</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Y:\Documents\work-ubuntu\rpcz\build-win\test\CMakeFiles\GLog" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Y:/Documents/work-ubuntu/rpcz/build-win/ZERO_CHECK.vcxproj">
+      <Project>4093F993-75E2-3F04-9ED7-0C462FCA8C9F</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

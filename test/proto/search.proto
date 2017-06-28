@@ -1,8 +1,12 @@
+syntax = "proto3";
 package rpcz;
 
 message SearchRequest {
-  required string query = 1;
-  optional int32 page_number = 2 [default = 1];
+   string query = 1;
+   oneof page_number_present {
+   int32 page_number = 2;
+  }
+  uint32 version = 3;
 }
 
 message SearchResponse {

@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{14809892-9323-3B19-A6CE-CBA4206353A1}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>search_pb</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\proto\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">search_pb.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">search_pb_d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\proto\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">search_pb.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">search_pb</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>Y:\Documents\work-ubuntu\dqlib_dev-new\external\protobuf-3.1.0\include;Y:\Documents\work-ubuntu\rpcz\src\rpcz;Y:\Documents\work-ubuntu\rpcz\include\rpcz;Y:\Documents\work-ubuntu\libzmq\include;C:\boost_1_59_0;Y:\Documents\work-ubuntu\rpcz\include;Y:\Documents\work-ubuntu\rpcz\build-win\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>ZMQ_STATIC;WIN32;_WINDOWS;_DEBUG;BOOST_LOG_DYN_LINK;Boost_USE_STATIC_LIBS=ON;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;BOOST_LOG_DYN_LINK;Boost_USE_STATIC_LIBS=ON;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Y:\Documents\work-ubuntu\dqlib_dev\external\protobuf-3.1.0\include;Y:\Documents\work-ubuntu\rpcz\src\rpcz;Y:\Documents\work-ubuntu\rpcz\include\rpcz;Y:\Documents\work-ubuntu\libzmq\include;C:\boost_1_59_0;Y:\Documents\work-ubuntu\rpcz\include;Y:\Documents\work-ubuntu\rpcz\build-win\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>Y:\Documents\work-ubuntu\dqlib_dev\external\protobuf-3.1.0\include;Y:\Documents\work-ubuntu\rpcz\src\rpcz;Y:\Documents\work-ubuntu\rpcz\include\rpcz;Y:\Documents\work-ubuntu\libzmq\include;C:\boost_1_59_0;Y:\Documents\work-ubuntu\rpcz\include;Y:\Documents\work-ubuntu\rpcz\build-win\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>Y:\Documents\work-ubuntu\dqlib_dev\external\protobuf-3.1.0\include;Y:\Documents\work-ubuntu\rpcz\src\rpcz;Y:\Documents\work-ubuntu\rpcz\include\rpcz;Y:\Documents\work-ubuntu\libzmq\include;C:\boost_1_59_0;Y:\Documents\work-ubuntu\rpcz\include;Y:\Documents\work-ubuntu\rpcz\build-win\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_LOG_DYN_LINK;Boost_USE_STATIC_LIBS=ON;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_LOG_DYN_LINK;Boost_USE_STATIC_LIBS=ON;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Y:\Documents\work-ubuntu\dqlib_dev\external\protobuf-3.1.0\include;Y:\Documents\work-ubuntu\rpcz\src\rpcz;Y:\Documents\work-ubuntu\rpcz\include\rpcz;Y:\Documents\work-ubuntu\libzmq\include;C:\boost_1_59_0;Y:\Documents\work-ubuntu\rpcz\include;Y:\Documents\work-ubuntu\rpcz\build-win\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>Y:\Documents\work-ubuntu\dqlib_dev\external\protobuf-3.1.0\include;Y:\Documents\work-ubuntu\rpcz\src\rpcz;Y:\Documents\work-ubuntu\rpcz\include\rpcz;Y:\Documents\work-ubuntu\libzmq\include;C:\boost_1_59_0;Y:\Documents\work-ubuntu\rpcz\include;Y:\Documents\work-ubuntu\rpcz\build-win\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\test\proto\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule Y:/Documents/work-ubuntu/rpcz/test/proto/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HY:/Documents/work-ubuntu/rpcz -BY:/Documents/work-ubuntu/rpcz/build-win --check-stamp-file Y:\Documents\work-ubuntu\rpcz\build-win\test\proto\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz/test/proto/CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz\test\proto\CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz\cmake_modules\rpcz_functions.cmake;Y:\Documents\work-ubuntu\rpcz\cmake_modules\FindProtobufPlugin.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;Y:\Documents\work-ubuntu\rpcz\test\proto\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\proto\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule Y:/Documents/work-ubuntu/rpcz/test/proto/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HY:/Documents/work-ubuntu/rpcz -BY:/Documents/work-ubuntu/rpcz/build-win --check-stamp-file Y:\Documents\work-ubuntu\rpcz\build-win\test\proto\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz/test/proto/CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz\test\proto\CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz\cmake_modules\rpcz_functions.cmake;Y:\Documents\work-ubuntu\rpcz\cmake_modules\FindProtobufPlugin.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;Y:\Documents\work-ubuntu\rpcz\test\proto\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\proto\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\bdb7892056ac50d99a7ae8cfa0c0de92\search.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Running C++ protocol buffer compiler on search.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+Y:\Documents\work-ubuntu\dqlib_dev\external\protobuf-3.1.0\vsprojects\release\protoc.exe --cpp_out Y:/Documents/work-ubuntu/rpcz/build-win/test/proto -I Y:/Documents/work-ubuntu/rpcz/test/proto Y:/Documents/work-ubuntu/rpcz/test/proto/search.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/bdb7892056ac50d99a7ae8cfa0c0de92/search.pb.cc.rule;Y:\Documents\work-ubuntu\rpcz\test\proto\search.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\proto\search.pb.cc;Y:\Documents\work-ubuntu\rpcz\build-win\test\proto\search.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Running C++ protocol buffer compiler on search.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+Y:\Documents\work-ubuntu\dqlib_dev\external\protobuf-3.1.0\vsprojects\release\protoc.exe --cpp_out Y:/Documents/work-ubuntu/rpcz/build-win/test/proto -I Y:/Documents/work-ubuntu/rpcz/test/proto Y:/Documents/work-ubuntu/rpcz/test/proto/search.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/bdb7892056ac50d99a7ae8cfa0c0de92/search.pb.cc.rule;Y:\Documents\work-ubuntu\rpcz\test\proto\search.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\proto\search.pb.cc;Y:\Documents\work-ubuntu\rpcz\build-win\test\proto\search.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\bdb7892056ac50d99a7ae8cfa0c0de92\search.rpcz.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Running cpp_rpcz protocol buffer compiler on search.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+Y:\Documents\work-ubuntu\dqlib_dev\external\protobuf-3.1.0\vsprojects\release\protoc.exe --cpp_rpcz_out Y:/Documents/work-ubuntu/rpcz/build-win/test/proto -I Y:/Documents/work-ubuntu/rpcz/test/proto --plugin=protoc-gen-cpp_rpcz=Y:/Documents/work-ubuntu/rpcz/cmake_modules/../build/src/rpcz/plugin/cpp/protoc-gen-cpp_rpcz Y:/Documents/work-ubuntu/rpcz/test/proto/search.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/bdb7892056ac50d99a7ae8cfa0c0de92/search.rpcz.cc.rule;Y:\Documents\work-ubuntu\rpcz\test\proto\search.proto;Y:\Documents\work-ubuntu\rpcz\build\src\rpcz\plugin\cpp\protoc-gen-cpp_rpcz;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\proto\search.rpcz.cc;Y:\Documents\work-ubuntu\rpcz\build-win\test\proto\search.rpcz.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Running cpp_rpcz protocol buffer compiler on search.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+Y:\Documents\work-ubuntu\dqlib_dev\external\protobuf-3.1.0\vsprojects\release\protoc.exe --cpp_rpcz_out Y:/Documents/work-ubuntu/rpcz/build-win/test/proto -I Y:/Documents/work-ubuntu/rpcz/test/proto --plugin=protoc-gen-cpp_rpcz=Y:/Documents/work-ubuntu/rpcz/cmake_modules/../build/src/rpcz/plugin/cpp/protoc-gen-cpp_rpcz Y:/Documents/work-ubuntu/rpcz/test/proto/search.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz/build-win/CMakeFiles/bdb7892056ac50d99a7ae8cfa0c0de92/search.rpcz.cc.rule;Y:\Documents\work-ubuntu\rpcz\test\proto\search.proto;Y:\Documents\work-ubuntu\rpcz\build\src\rpcz\plugin\cpp\protoc-gen-cpp_rpcz;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\test\proto\search.rpcz.cc;Y:\Documents\work-ubuntu\rpcz\build-win\test\proto\search.rpcz.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Y:\Documents\work-ubuntu\rpcz\build-win\test\proto\search.pb.h" />
+    <ClInclude Include="Y:\Documents\work-ubuntu\rpcz\build-win\test\proto\search.rpcz.h" />
+    <ClCompile Include="Y:\Documents\work-ubuntu\rpcz\build-win\test\proto\search.pb.cc" />
+    <ClCompile Include="Y:\Documents\work-ubuntu\rpcz\build-win\test\proto\search.rpcz.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Y:/Documents/work-ubuntu/rpcz/build-win/ZERO_CHECK.vcxproj">
+      <Project>4093F993-75E2-3F04-9ED7-0C462FCA8C9F</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

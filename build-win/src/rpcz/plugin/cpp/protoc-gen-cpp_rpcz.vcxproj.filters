@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Y:\Documents\work-ubuntu\rpcz\src\rpcz\plugin\cpp\rpcz_cpp_generator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Y:\Documents\work-ubuntu\rpcz\src\rpcz\plugin\cpp\file_generator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Y:\Documents\work-ubuntu\rpcz\src\rpcz\plugin\cpp\rpcz_cpp_main.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Y:\Documents\work-ubuntu\rpcz\src\rpcz\plugin\cpp\rpcz_cpp_service.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\src\rpcz\plugin\cpp\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F05B9F5B-EAC2-3CA7-B6AA-24334FD4DAE7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

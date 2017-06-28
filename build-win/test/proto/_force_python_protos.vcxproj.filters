@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\test\proto\CMakeLists.txt" />
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\bdb7892056ac50d99a7ae8cfa0c0de92\search_pb2.py.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\bdb7892056ac50d99a7ae8cfa0c0de92\search_rpcz.py.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\build-win\CMakeFiles\cf53f3674042246b6664a7a24e46e883\_force_python_protos.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Y:\Documents\work-ubuntu\rpcz\build-win\test\proto\CMakeFiles\_force_python_protos" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{9A40FE3A-04F2-3B2D-8AFE-6B1E67D12E0C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

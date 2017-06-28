@@ -1,0 +1,80 @@
+import httplib  
+import threading
+import random
+import time
+import datetime
+from grpc_client import grpc_cla_test
+import dqlib_rpcz
+import search_rpcz
+
+
+ret_data = []
+lock = threading.Lock()
+
+
+
+
+def oneRpcz():
+	ret = dqlib_rpcz.run()
+	
+	lock.acquire()
+	if(abs(ret-0.00277)<0.00001):
+		ret_data.append(True)
+	else:
+		ret_data.append(False)
+	lock.release()
+
+rsleep=10
+def oneGrpc():
+	ret = grpc_cla_test.run()
+	
+	lock.acquire()
+	if(abs(ret-0.00277)<0.00001):
+		ret_data.append(True)
+	else:
+		ret_data.append(False)
+	lock.release()
+
+
+def bunch_test(nthreads,ncycles,func):
+	global ret_data
+	ret_data = []
+
+	a = datetime.datetime.now()
+	for x in xrange(ncycles):
+		threads = []
+		for i in range(nthreads):
+			t1 = threading.Thread(target=func)
+			threads.append(t1)
+		for t in threads:
+			t.setDaemon(True)
+			t.start()
+		for t in threads:
+			t.join()
+	b = datetime.datetime.now()
+	succ = fail = 0
+	for ret in ret_data:
+		if ret:
+			succ += 1
+		else:
+			fail += 1
+	print "Total tests:%d times,used time  %d seconds.%d threads run %d cycles, %d successful, %d failed."%(nthreads*ncycles,(b-a).seconds, nthreads,ncycles,succ,fail)
+	ret_data=[]
+
+if __name__ == '__main__':
+	# oneGrpc()
+	# oneRpcz()
+
+	print "Test rpcz:"
+	bunch_test(10,10,oneRpcz)
+
+	print "Test Grpc:"
+	bunch_test(10,10,oneGrpc)
+
+
+
+
+
+
+
+

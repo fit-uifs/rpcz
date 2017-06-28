@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+Y:/Documents/work-ubuntu/rpcz/src/rpcz/CMakeLists.txt
+Y:/Documents/work-ubuntu/rpcz/cmake_modules/FindZeroMQ.cmake
+Y:/Documents/work-ubuntu/rpcz/cmake_modules/LibFindMacros.cmake

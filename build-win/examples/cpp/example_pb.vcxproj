@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{B6F0F69B-44B7-3339-B44E-0558014779AC}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>example_pb</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\examples\cpp\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">example_pb.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">example_pb_d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\examples\cpp\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">example_pb.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">example_pb</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>Y:\Documents\work-ubuntu\dqlib_dev-new\external\protobuf-3.1.0\include;Y:\Documents\work-ubuntu\rpcz\src\rpcz;Y:\Documents\work-ubuntu\rpcz\include\rpcz;Y:\Documents\work-ubuntu\libzmq\include;C:\boost_1_59_0;Y:\Documents\work-ubuntu\rpcz\include;Y:\Documents\work-ubuntu\rpcz\build-win\src;Y:\Documents\work-ubuntu\rpcz\build-win\examples;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>ZMQ_STATIC;ZMQ_STATIC;WIN32;_WINDOWS;_DEBUG;BOOST_LOG_DYN_LINK;Boost_USE_STATIC_LIBS=ON;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;BOOST_LOG_DYN_LINK;Boost_USE_STATIC_LIBS=ON;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Y:\Documents\work-ubuntu\dqlib_dev\external\protobuf-3.1.0\include;Y:\Documents\work-ubuntu\rpcz\src\rpcz;Y:\Documents\work-ubuntu\rpcz\include\rpcz;Y:\Documents\work-ubuntu\libzmq\include;C:\boost_1_59_0;Y:\Documents\work-ubuntu\rpcz\include;Y:\Documents\work-ubuntu\rpcz\build-win\src;Y:\Documents\work-ubuntu\rpcz\build-win\examples;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>Y:\Documents\work-ubuntu\dqlib_dev\external\protobuf-3.1.0\include;Y:\Documents\work-ubuntu\rpcz\src\rpcz;Y:\Documents\work-ubuntu\rpcz\include\rpcz;Y:\Documents\work-ubuntu\libzmq\include;C:\boost_1_59_0;Y:\Documents\work-ubuntu\rpcz\include;Y:\Documents\work-ubuntu\rpcz\build-win\src;Y:\Documents\work-ubuntu\rpcz\build-win\examples;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>Y:\Documents\work-ubuntu\dqlib_dev\external\protobuf-3.1.0\include;Y:\Documents\work-ubuntu\rpcz\src\rpcz;Y:\Documents\work-ubuntu\rpcz\include\rpcz;Y:\Documents\work-ubuntu\libzmq\include;C:\boost_1_59_0;Y:\Documents\work-ubuntu\rpcz\include;Y:\Documents\work-ubuntu\rpcz\build-win\src;Y:\Documents\work-ubuntu\rpcz\build-win\examples;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>ZMQ_STATIC;WIN32;_WINDOWS;NDEBUG;BOOST_LOG_DYN_LINK;Boost_USE_STATIC_LIBS=ON;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_LOG_DYN_LINK;Boost_USE_STATIC_LIBS=ON;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Y:\Documents\work-ubuntu\dqlib_dev\external\protobuf-3.1.0\include;Y:\Documents\work-ubuntu\rpcz\src\rpcz;Y:\Documents\work-ubuntu\rpcz\include\rpcz;Y:\Documents\work-ubuntu\libzmq\include;C:\boost_1_59_0;Y:\Documents\work-ubuntu\rpcz\include;Y:\Documents\work-ubuntu\rpcz\build-win\src;Y:\Documents\work-ubuntu\rpcz\build-win\examples;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>Y:\Documents\work-ubuntu\dqlib_dev\external\protobuf-3.1.0\include;Y:\Documents\work-ubuntu\rpcz\src\rpcz;Y:\Documents\work-ubuntu\rpcz\include\rpcz;Y:\Documents\work-ubuntu\libzmq\include;C:\boost_1_59_0;Y:\Documents\work-ubuntu\rpcz\include;Y:\Documents\work-ubuntu\rpcz\build-win\src;Y:\Documents\work-ubuntu\rpcz\build-win\examples;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="Y:\Documents\work-ubuntu\rpcz\examples\cpp\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule Y:/Documents/work-ubuntu/rpcz/examples/cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HY:/Documents/work-ubuntu/rpcz -BY:/Documents/work-ubuntu/rpcz/build-win --check-stamp-file Y:\Documents\work-ubuntu\rpcz\build-win\examples\cpp\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:/Documents/work-ubuntu/rpcz/examples/cpp/CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz\examples\cpp\CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz\cmake_modules\rpcz_functions.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindProtobuf.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;Y:\Documents\work-ubuntu\rpcz\examples\cpp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\examples\cpp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule Y:/Documents/work-ubuntu/rpcz/examples/cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HY:/Documents/work-ubuntu/rpcz -BY:/Documents/work-ubuntu/rpcz/build-win --check-stamp-file Y:\Documents\work-ubuntu\rpcz\build-win\examples\cpp\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:/Documents/work-ubuntu/rpcz/examples/cpp/CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz\examples\cpp\CMakeLists.txt;Y:\Documents\work-ubuntu\rpcz\cmake_modules\rpcz_functions.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindProtobuf.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;Y:\Documents\work-ubuntu\rpcz\examples\cpp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\work-ubuntu\rpcz\build-win\examples\cpp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\examples\cpp\dqlib.pb.h" />
+    <ClInclude Include="..\..\..\examples\cpp\dqlib.rpcz.h" />
+    <ClInclude Include="Y:\Documents\work-ubuntu\rpcz\examples\cpp\search.pb.h" />
+    <ClInclude Include="Y:\Documents\work-ubuntu\rpcz\examples\cpp\search.rpcz.h" />
+    <ClCompile Include="..\..\..\examples\cpp\dqlib.pb.cc" />
+    <ClCompile Include="..\..\..\examples\cpp\dqlib.rpcz.cc" />
+    <ClCompile Include="Y:\Documents\work-ubuntu\rpcz\examples\cpp\search.pb.cc" />
+    <ClCompile Include="Y:\Documents\work-ubuntu\rpcz\examples\cpp\search.rpcz.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Y:/Documents/work-ubuntu/rpcz/build-win/ZERO_CHECK.vcxproj">
+      <Project>4093F993-75E2-3F04-9ED7-0C462FCA8C9F</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

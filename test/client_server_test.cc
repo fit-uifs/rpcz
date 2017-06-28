@@ -31,6 +31,7 @@
 #include "proto/search.rpcz.h"
 
 using namespace std;
+//using namespace examples;
 
 namespace rpcz {
 
@@ -126,6 +127,8 @@ class server_test : public ::testing::Test {
   void start_server() {
     backend_server_.register_service(
         new BackendSearchServiceImpl);
+    char* host_backend = "tcp://localhost:10028";//"inproc://myserver.backend"
+    char* host_fronted = "tcp://localhost:10027";//"inproc://myserver.backend"
     backend_server_.bind("inproc://myserver.backend");
     backend_connection_ = cm_->connect("inproc://myserver.backend");
 
@@ -213,11 +216,13 @@ TEST_F(server_test, SimpleRequestWithTimeoutAsync) {
   {
     rpc rpc;
     request.set_query("timeout");
-    rpc.set_deadline_ms(1);
+    rpc.set_deadline_ms(1000);
     sync_event event;
     stub.Search(request, &response, &rpc,
                 new_callback(&event, &sync_event::signal));
     event.wait();
+    //status_code cd = rpc.get_status();
+
     ASSERT_EQ(rpc_response_header::DEADLINE_EXCEEDED, rpc.get_status());
   }
 }
