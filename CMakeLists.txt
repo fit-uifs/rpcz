@@ -64,17 +64,16 @@ endif()
 
 set(CMAKE_OSX_ARCHITECTURES x86_64)
 
-add_subdirectory(test)
 add_subdirectory(src)
 
-#if(rpcz_build_tests)
-#    enable_testing()
-#    add_subdirectory(test)
-#endif(rpcz_build_tests)
+if(rpcz_build_tests)
+    enable_testing()
+    add_subdirectory(test)
+endif(rpcz_build_tests)
 
-#if(rpcz_build_examples)
+if(rpcz_build_examples)
   add_subdirectory(examples/cpp)
-#endif(rpcz_build_examples)
+endif(rpcz_build_examples)
 
 file(GLOB RPCZ_PUBLIC_HEADERS include/rpcz/*.hpp)
 install(FILES ${RPCZ_PUBLIC_HEADERS} DESTINATION include/rpcz)
