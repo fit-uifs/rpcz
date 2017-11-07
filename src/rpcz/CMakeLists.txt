@@ -34,6 +34,27 @@ endif()
 target_link_libraries(rpcz ${RPCZ_LIB_DEPS})
 set(RPCZ_TARGET_LIBS rpcz)
 
+if(rpcz_build_python_support OR rpcz_install_python_support)
+    add_custom_command(
+      TARGET rpcz
+      POST_BUILD
+      COMMAND python "${CMAKE_CURRENT_SOURCE_DIR}/../../python/setup.py" build
+      WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../../python/"
+      COMMENT "Building python support..."
+      VERBATIM
+    )
+    if(rpcz_install_python_support)
+        add_custom_command(
+          TARGET rpcz
+          POST_BUILD
+          COMMAND pip install -e . 
+          WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../../python/"
+          COMMENT "Installing python support..."
+          VERBATIM
+        )
+    endif(rpcz_install_python_support)
+endif(rpcz_build_python_support OR rpcz_install_python_support)
+
 add_executable(zsendrpc zsendrpc.cc)
 target_link_libraries(zsendrpc rpcz ${Boost_PROGRAM_OPTIONS_LIBRARIES})
 
