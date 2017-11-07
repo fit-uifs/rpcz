@@ -102,7 +102,7 @@ git clone git@github.com:fit-uifs/rpcz.git
 cd rpcz
 mkdir build
 cd build
-cmake .. # to build python support run "cmake -Drpcz_build_python_support .."; to install python support run "cmake -Drpcz_install_python_support .."
+cmake .. # to build python support run "cmake -Drpcz_build_python_support=1 .."; to install python support run "cmake -Drpcz_install_python_support=1 .."
 make
 sudo make install
 ```
@@ -148,7 +148,7 @@ git clone git@github.com:fit-uifs/rpcz.git
 cd rpcz
 mkdir build
 cd build
-cmake .. # to build python support run "cmake -Drpcz_build_python_support .."; to install python support run "cmake -Drpcz_install_python_support .."
+cmake .. # to build python support run "cmake -Drpcz_build_python_support=1 .."; to install python support run "cmake -Drpcz_install_python_support=1 .."
 make
 make install
 ```
