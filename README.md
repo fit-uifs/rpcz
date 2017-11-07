@@ -28,12 +28,12 @@ Let's write a C++ server and a Python client for a search service defined as fol
 
 ```protobuf
 message SearchRequest {
-  required string query = 1;
-  optional int32 page_number = 2 [default = 1];
+  string query = 1;
+  int32 page_number = 2 [default = 1];
 }
 
 message SearchResponse {
-  repeated string results = 1;
+  string results = 1;
 }
 
 service SearchService {
@@ -98,11 +98,11 @@ apt-get install libprotobuf-dev libprotoc-dev protobuf-compiler libzmq-dev \
 
   * Download, build and install:
 ```bash
-git clone git@github.com:thesamet/rpcz.git
+git clone git@github.com:fit-uifs/rpcz.git
 cd rpcz
 mkdir build
 cd build
-cmake .. -Drpcz_build_examples=1
+cmake .. # to build python support run "cmake -Drpcz_build_python_support .."; to install python support run "cmake -Drpcz_install_python_support .."
 make
 sudo make install
 ```
@@ -121,6 +121,7 @@ The package runtime dependencies have be tuned for Ubuntu 14.04 so YMMV. You can
 
   * Python support (optional):
 ```bash
+# may be build or install by cmake - see above
 cd ../python
 python setup.py build
 pip install -e .
@@ -143,11 +144,11 @@ wget https://raw.githubusercontent.com/zeromq/cppzmq/master/zmq.hpp -O /usr/loca
 ```
   * Download, build and install:
 ```bash
-git clone git@github.com:thesamet/rpcz.git
+git clone git@github.com:fit-uifs/rpcz.git
 cd rpcz
 mkdir build
 cd build
-cmake .. -Drpcz_build_examples=0
+cmake .. # to build python support run "cmake -Drpcz_build_python_support .."; to install python support run "cmake -Drpcz_install_python_support .."
 make
 make install
 ```
@@ -158,6 +159,7 @@ You don't really have to `make install` if you don't want to. Just make sure tha
 
   * Python support (optional):
 ```bash
+# may be build or install by cmake - see above
 cd ../python
 python setup.py install
 ```
@@ -174,7 +176,7 @@ First of all, on Windows it is recommended to build both release and debug confi
    2. Set the `BOOST_ROOT` environment variable to the installation path used above.
    3. Add the boost DLL directory to your `PATH` (e.g. `%BOOST_ROOT%\lib32-msvc-11.0`).
 * Google Protobuf installation
-   1. Download and extract the protobuf source package [protobuf-2.6.1.zip](https://github.com/google/protobuf/releases/download/v2.6.1/protobuf-2.6.1.zip) in the final installation directory.
+   1. Download and extract the protobuf source package [protobuf-3.1.0.zip](https://github.com/google/protobuf/archive/v3.1.0.zip) in the final installation directory.
    2. Open the Visual Studio solution in the `vsprojects` subdirectory and build both debug and release configurations.
    3. Set the `PROTOBUF_SRC_ROOT_FOLDER` environment variable to the protobuf directory used above.
 * ZeroMQ installation
