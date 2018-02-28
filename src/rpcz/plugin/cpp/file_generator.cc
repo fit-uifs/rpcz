@@ -90,11 +90,8 @@ void FileGenerator::GenerateHeader(io::Printer* printer) {
   printer->Print(
     // Note that we don't put dllexport_decl on these because they are only
     // called by the .pb.cc file in which they are defined.
-    "void rpcz_$assigndescriptorsname$();\n"
-    "void rpcz_$shutdownfilename$();\n"
-    "\n",
-    "assigndescriptorsname", GlobalAssignDescriptorsName(file_->name()),
-    "shutdownfilename", GlobalShutdownFileName(file_->name()));
+    "\n"
+    "void TableStruct::Shutdown() {");
 
   for (int i = 0; i < file_->service_count(); i++) {
     service_generators_[i]->GenerateDeclarations(printer);
@@ -158,11 +155,6 @@ void FileGenerator::GenerateNamespaceClosers(io::Printer* printer) {
 
 void FileGenerator::GenerateBuildDescriptors(io::Printer* printer) {
   if (HasDescriptorMethods(file_)) {
-    printer->Print(
-      "\n"
-      "void rpcz_$assigndescriptorsname$() {\n",
-      "assigndescriptorsname", GlobalAssignDescriptorsName(file_->name()));
-    printer->Indent();
 
     // Get the file's descriptor from the pool.
     printer->Print(
@@ -198,8 +190,7 @@ void FileGenerator::GenerateBuildDescriptors(io::Printer* printer) {
       "  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,\n"
       "                 &rpcz_$assigndescriptorsname$);\n"
       "}\n"
-      "\n",
-      "assigndescriptorsname", GlobalAssignDescriptorsName(file_->name()));
+      "\n");
 
     // protobuf_RegisterTypes():  Calls
     // MessageFactory::InternalRegisterGeneratedType() for each message type.
@@ -220,8 +211,7 @@ void FileGenerator::GenerateBuildDescriptors(io::Printer* printer) {
   // ShutdownFile():  Deletes descriptors, default instances, etc. on shutdown.
   printer->Print(
     "\n"
-    "void rpcz_$shutdownfilename$() {\n",
-    "shutdownfilename", GlobalShutdownFileName(file_->name()));
+    "void TableStruct::Shutdown() {\n");
   printer->Indent();
 
   printer->Outdent();
