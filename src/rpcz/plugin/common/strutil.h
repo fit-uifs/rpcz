@@ -40,6 +40,8 @@
 namespace google {
 namespace protobuf {
 
+using std::vector;
+
 #ifdef _MSC_VER
 #define strtoll  _strtoi64
 #define strtoull _strtoui64
