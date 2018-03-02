@@ -26,6 +26,7 @@ namespace rpcz {
 namespace plugin {
 namespace cpp {
 
+using std::map;
 using namespace google::protobuf;
 using namespace google::protobuf::compiler::cpp;
 
