@@ -47,6 +47,7 @@ namespace python {
 namespace {
 
 using std::string;
+using std::map;
 using namespace google::protobuf;
 using namespace google::protobuf::compiler;
 // Returns a copy of |filename| with any trailing ".protodevel" or ".proto

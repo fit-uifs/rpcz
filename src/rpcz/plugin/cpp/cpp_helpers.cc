@@ -112,35 +112,27 @@ const char kThickSeparator[] =
 const char kThinSeparator[] =
   "// -------------------------------------------------------------------\n";
 
-string ClassName(const Descriptor* descriptor, bool qualified) {
+string ClassName(const Descriptor* descriptor) {
 
-  // Find "outer", the descriptor of the top-level message in which
+  // Find "parent", the descriptor of the top-level message in which
   // "descriptor" is embedded.
-  const Descriptor* outer = descriptor;
-  while (outer->containing_type() != NULL) outer = outer->containing_type();
-
-  const string& outer_name = outer->full_name();
-  string inner_name = descriptor->full_name().substr(outer_name.size());
-
-  if (qualified) {
-    return "::" + DotsToColons(outer_name) + DotsToUnderscores(inner_name);
-  } else {
-    return outer->name() + DotsToUnderscores(inner_name);
+  const Descriptor* parent = descriptor->containing_type();
+  string res;
+  if (parent) {
+    res += ClassName(parent) + "_";
   }
+  res += descriptor->name();
+  if (IsMapEntryMessage(descriptor)) {
+    res += "_DoNotUse";
+  }
+  return res;
 }
 
-string ClassName(const EnumDescriptor* enum_descriptor, bool qualified) {
+string ClassName(const EnumDescriptor* enum_descriptor) {
   if (enum_descriptor->containing_type() == NULL) {
-    if (qualified) {
-      return DotsToColons(enum_descriptor->full_name());
-    } else {
-      return enum_descriptor->name();
-    }
+    return enum_descriptor->name();
   } else {
-    string result = ClassName(enum_descriptor->containing_type(), qualified);
-    result += '_';
-    result += enum_descriptor->name();
-    return result;
+    return ClassName(enum_descriptor->containing_type()) + "_" + enum_descriptor->name();
   }
 }
 
@@ -324,16 +316,6 @@ string FilenameIdentifier(const string& filename) {
 // Return the name of the AddDescriptors() function for a given file.
 string GlobalAddDescriptorsName(const string& filename) {
   return "protobuf_AddDesc_" + FilenameIdentifier(filename);
-}
-
-// Return the name of the AssignDescriptors() function for a given file.
-string GlobalAssignDescriptorsName(const string& filename) {
-  return "protobuf_AssignDesc_" + FilenameIdentifier(filename);
-}
-
-// Return the name of the ShutdownFile() function for a given file.
-string GlobalShutdownFileName(const string& filename) {
-  return "protobuf_ShutdownFile_" + FilenameIdentifier(filename);
 }
 
 // Escape C++ trigraphs by escaping question marks to \?

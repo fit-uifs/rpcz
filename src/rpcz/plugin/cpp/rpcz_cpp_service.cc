@@ -97,7 +97,7 @@ void ServiceGenerator::GenerateInterface(io::Printer* printer) {
 
 void ServiceGenerator::GenerateStubDefinition(io::Printer* printer) {
   printer->Print(vars_,
-    "class $dllexport$$classname$_Stub {\n"
+    "class $dllexport$$classname$_Stub : public $classname$ {\n"
     " public:\n");
 
   printer->Indent();

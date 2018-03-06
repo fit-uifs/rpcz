@@ -49,6 +49,27 @@ namespace cpp {
 extern const char kThickSeparator[];
 extern const char kThinSeparator[];
 
+// Name space of the proto file. This namespace is such that the string
+// "<namespace>::some_name" is the correct fully qualified namespace.
+// This means if the package is empty the namespace is "", and otherwise
+// the namespace is "::foo::bar::...::baz" without trailing semi-colons.
+string Namespace(const string& package);
+inline string Namespace(const FileDescriptor* d) {
+  return Namespace(d->package());
+}
+
+template <typename Desc> string Namespace(const Desc* d) {
+  return Namespace(d->file());
+}
+
+string ClassName(const Descriptor* descriptor);
+string ClassName(const EnumDescriptor* enum_descriptor);
+template <typename Desc> string QualifiedClassName(const Desc* d) {
+  return Namespace(d) + "::" + ClassName(d);
+}
+
+// DEPRECATED: just use ClassName or QualifiedClassName, a boolean is very
+// unreadable at the callsite.
 // Returns the non-nested type name for the given type.  If "qualified" is
 // true, prefix the type with the full namespace.  For example, if you had:
 //   package foo.bar;
@@ -57,8 +78,13 @@ extern const char kThinSeparator[];
 //   ::foo::bar::Baz_Qux
 // While the non-qualified version would be:
 //   Baz_Qux
-string ClassName(const Descriptor* descriptor, bool qualified);
-string ClassName(const EnumDescriptor* enum_descriptor, bool qualified);
+inline string ClassName(const Descriptor* descriptor, bool qualified) {
+  return qualified ? QualifiedClassName(descriptor) : ClassName(descriptor);
+}
+
+inline string ClassName(const EnumDescriptor* descriptor, bool qualified) {
+  return qualified ? QualifiedClassName(descriptor) : ClassName(descriptor);
+}
 
 string SuperClassName(const Descriptor* descriptor);
 
@@ -105,12 +131,6 @@ string FilenameIdentifier(const string& filename);
 
 // Return the name of the AddDescriptors() function for a given file.
 string GlobalAddDescriptorsName(const string& filename);
-
-// Return the name of the AssignDescriptors() function for a given file.
-string GlobalAssignDescriptorsName(const string& filename);
-
-// Return the name of the ShutdownFile() function for a given file.
-string GlobalShutdownFileName(const string& filename);
 
 // Escape C++ trigraphs by escaping question marks to \?
 string EscapeTrigraphs(const string& to_escape);
